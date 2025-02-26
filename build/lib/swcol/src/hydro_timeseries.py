@@ -13,6 +13,8 @@ def get_xm_reports():
     # Load resource metadata
     resources = pd.read_csv(dema_path + '2022-12-01_2023-11-30/LitadoRecursos_Sistema.csv')
     resources = resources.drop(resources.columns[0], axis=1)
+    # Only water sources
+    resources = resources[resources['Values_EnerSource'] == 'AGUA']
 
     # Load generation data for 2023, 2022, and 2021
     generation_files = [
@@ -46,7 +48,6 @@ def get_xm_reports():
         generation, resources,
         left_on="Values_code", right_on="Values_Code", how="inner"
     )
-    generation = generation[generation['Values_EnerSource'] == 'AGUA']
     generation = generation[['Values_Name', 'Value', 'Datetime']]
 
     return generation

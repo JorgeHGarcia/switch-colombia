@@ -16,6 +16,7 @@ def table(model_outputs_path, model_inputs_path):
 
     pivot_table = new_gen.pivot_table(index='gen_tech',columns='Year',
                                     values='BuildGen',aggfunc='sum').fillna(0)
+    pivot_table.rename(columns={'gen_tech': 'Technology'}, inplace=True)
     pivot_table.loc['Total'] = pivot_table.sum()
 
     return pivot_table

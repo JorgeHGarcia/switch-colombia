@@ -13,20 +13,22 @@ def table(model_outputs_path, model_inputs_path):
         'BuildGen' : 'sum'}).reset_index()
     new_gen.rename(columns={'GEN_BLD_YRS_2': 'Year'}, inplace=True)
     new_gen['BuildGen'] = new_gen['BuildGen'].round(2)
+    new_gen.rename(columns={'gen_tech': 'Tech'}, inplace=True)
 
-    pivot_table = new_gen.pivot_table(index='gen_tech',columns='Year',
+    pivot_table = new_gen.pivot_table(index='Tech',columns='Year',
                                     values='BuildGen',aggfunc='sum').fillna(0)
     pivot_table.loc['Total'] = pivot_table.sum()
-
+    
     return pivot_table
 
 import plotly.express as px
 def dispatched_generation(dataframe, x_axis, y_axis, color):
     dataframe = dataframe.groupby([x_axis, color]).agg({
         y_axis : 'sum'}).reset_index()
-    dataframe = dataframe.sort_values(by=y_axis, ascending=False)
+    dataframe = dataframe.sort_values(by=[x_axis,y_axis], ascending=[True,False])
     fig = px.bar(
         dataframe, x=x_axis, y=y_axis,
+        text=y_axis,
         color=color, title='Generation Dispatch Over Time by Technology',
         labels={y_axis: 'Dispatched Generation (MW)', x_axis: 'Year'})
 
@@ -39,6 +41,7 @@ def dispatched_generation(dataframe, x_axis, y_axis, color):
         showgrid=True  # Show grid to help align the labels visually
         ),
         yaxis_title="Dispatched Generation (TWh)")
+    fig.update_traces(texttemplate='%{text:.2f}', textposition='inside')
     fig.show()
 
 def annual_emmissions(dataframe, x_axis, y_axis):
