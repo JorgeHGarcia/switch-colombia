@@ -1,0 +1,8 @@
+TRANSMISSION_LINES,trans_lz1,trans_lz2,trans_length_km,trans_efficiency,existing_trans_cap,trans_new_build_allowed
+Antioquia-Caribe,Antioquia,Caribe,331.18,0.96,1055.0,1
+Antioquia-Nordeste,Antioquia,Nordeste,329.95,0.96,845.0,1
+Antioquia-Oriental,Antioquia,Oriental,568.98,0.96,480.0,1
+Antioquia-Surocciden,Antioquia,Surocciden,552.69,0.96,1420.0,1
+Caribe-Nordeste,Caribe,Nordeste,358.09,0.96,500.0,1
+Nordeste-Oriental,Nordeste,Oriental,367.95,0.96,882.5,1
+Oriental-Surocciden,Oriental,Surocciden,322.09,0.96,882.5,1

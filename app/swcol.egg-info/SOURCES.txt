@@ -13,7 +13,7 @@ app/swcol/src/hydro_capacitors.py
 app/swcol/src/hydro_timeseries.py
 app/swcol/src/loads.py
 app/swcol/src/rain_seasons.py
-app/swcol/src/report_res.py
 app/swcol/src/scenarios.py
+app/swcol/src/template.py
 app/swcol/src/time.py
 app/swcol/src/variable_capacitors.py

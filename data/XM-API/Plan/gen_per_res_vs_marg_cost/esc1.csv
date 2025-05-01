@@ -1,85 +1,85 @@
 year,Tech,Energy_GWh_typical_yr
-2024, Menores,1191
-2024, Thermal,1663
-2024, Thermal,6952
-2024, Hidro,65233
-2024, Eolica,63
-2024, pv_solar,3651
-2025, Menores,1191
-2025, Thermal,1249
-2025, Thermal,6437
-2025, Hidro,64623
-2025, Eolica,206
-2025, pv_solar,10202
-2026, Menores,1191
-2026, Thermal,905
-2026, Thermal,6039
-2026, Hidro,64781
-2026, Eolica,206
-2026, pv_solar,10202
-2027, Menores,1191
-2027, Thermal,304
-2027, Thermal,5818
-2027, Hidro,62382
-2027, Eolica,4989
-2027, pv_solar,10660
-2028, Menores,1191
-2028, Thermal,115
-2028, Thermal,5767
-2028, Hidro,63361
-2028, Eolica,7095
-2028, pv_solar,10848
-2029, Menores,1191
-2029, Thermal,88
-2029, Thermal,5767
-2029, Hidro,62958
-2029, Eolica,9398
-2029, pv_solar,11292
-2030, Menores,1191
-2030, Thermal,156
-2030, Thermal,5777
-2030, Hidro,64772
-2030, Eolica,9772
-2030, pv_solar,11434
-2031, Menores,1191
-2031, Thermal,393
-2031, Thermal,4484
-2031, Hidro,69226
-2031, Eolica,9772
-2031, pv_solar,11577
-2032, Menores,1191
-2032, Thermal,162
-2032, Thermal,4359
-2032, Hidro,65597
-2032, Eolica,16615
-2032, pv_solar,11577
-2033, Menores,1191
-2033, Thermal,159
-2033, Thermal,4359
-2033, Hidro,61212
-2033, Eolica,23941
-2033, pv_solar,11800
-2034, Menores,1191
-2034, Thermal,495
-2034, Thermal,4484
-2034, Hidro,64078
-2034, Eolica,23941
-2034, pv_solar,11906
-2035, Menores,1191
-2035, Thermal,341
-2035, Thermal,4392
-2035, Hidro,65550
-2035, Eolica,26201
-2035, pv_solar,12031
-2036, Menores,1191
-2036, Thermal,461
-2036, Thermal,4445
-2036, Hidro,68320
-2036, Eolica,26201
-2036, pv_solar,12654
-2037, Menores,1383
-2037, Thermal,1030
-2037, Thermal,4787
-2037, Hidro,71123
-2037, Eolica,26201
-2037, pv_solar,12745
+2024,RunOfRiver,1191
+2024,Thermal,1663
+2024,Thermal,6952
+2024,Hidro,65233
+2024,Eolica,63
+2024,pv_solar,3651
+2025,RunOfRiver,1191
+2025,Thermal,1249
+2025,Thermal,6437
+2025,Hidro,64623
+2025,Eolica,206
+2025,pv_solar,10202
+2026,RunOfRiver,1191
+2026,Thermal,905
+2026,Thermal,6039
+2026,Hidro,64781
+2026,Eolica,206
+2026,pv_solar,10202
+2027,RunOfRiver,1191
+2027,Thermal,304
+2027,Thermal,5818
+2027,Hidro,62382
+2027,Eolica,4989
+2027,pv_solar,10660
+2028,RunOfRiver,1191
+2028,Thermal,115
+2028,Thermal,5767
+2028,Hidro,63361
+2028,Eolica,7095
+2028,pv_solar,10848
+2029,RunOfRiver,1191
+2029,Thermal,88
+2029,Thermal,5767
+2029,Hidro,62958
+2029,Eolica,9398
+2029,pv_solar,11292
+2030,RunOfRiver,1191
+2030,Thermal,156
+2030,Thermal,5777
+2030,Hidro,64772
+2030,Eolica,9772
+2030,pv_solar,11434
+2031,RunOfRiver,1191
+2031,Thermal,393
+2031,Thermal,4484
+2031,Hidro,69226
+2031,Eolica,9772
+2031,pv_solar,11577
+2032,RunOfRiver,1191
+2032,Thermal,162
+2032,Thermal,4359
+2032,Hidro,65597
+2032,Eolica,16615
+2032,pv_solar,11577
+2033,RunOfRiver,1191
+2033,Thermal,159
+2033,Thermal,4359
+2033,Hidro,61212
+2033,Eolica,23941
+2033,pv_solar,11800
+2034,RunOfRiver,1191
+2034,Thermal,495
+2034,Thermal,4484
+2034,Hidro,64078
+2034,Eolica,23941
+2034,pv_solar,11906
+2035,RunOfRiver,1191
+2035,Thermal,341
+2035,Thermal,4392
+2035,Hidro,65550
+2035,Eolica,26201
+2035,pv_solar,12031
+2036,RunOfRiver,1191
+2036,Thermal,461
+2036,Thermal,4445
+2036,Hidro,68320
+2036,Eolica,26201
+2036,pv_solar,12654
+2037,RunOfRiver,1383
+2037,Thermal,1030
+2037,Thermal,4787
+2037,Hidro,71123
+2037,Eolica,26201
+2037,pv_solar,12745

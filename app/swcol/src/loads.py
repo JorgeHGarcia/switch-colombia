@@ -1,9 +1,9 @@
 import pandas as pd
-import swcol
+import swcol as sw
 def cluster(generation):
     # Clustering: Aplicar la función para obtener el cuartil y combinar con el año
     generation['Date'] = pd.to_datetime(generation['Date'])
-    generation = swcol.rain_seasons.format_hours(generation)
+    generation = sw.rain_seasons.format_hours(generation)
 
     generation = generation.groupby(['timestamp','Tech']).agg({
         'GeneReal': 'mean'}).reset_index()
@@ -13,12 +13,17 @@ def cluster(generation):
 
 import plotly.express as px
 def plot_multiple_line(generation, sort, x, y, color, title, labels):
+    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
     generation = generation.sort_values(by=sort)
     fig = px.line(
         generation, 
         x=x, y=y, 
-        color=color, title=title,
-        labels=labels
+        color_discrete_sequence=colors,
+        title=title,
+        color=color,
+        labels=labels,
+        height=9*50, width=16*50,
+        template='plotly_white'
     )
     fig.show()
 
@@ -81,7 +86,7 @@ def loads_to_timestamps(loads):
     }).reset_index()
 
     loads['Date'] = pd.to_datetime(loads['Date'])
-    loads = swcol.rain_seasons.format_hours(loads)
+    loads = sw.rain_seasons.format_hours(loads)
 
     loads = loads.groupby(['timestamp','Zone']).agg({
         'demand_mw': 'mean',
@@ -89,7 +94,6 @@ def loads_to_timestamps(loads):
     }).reset_index()
     return loads
 
-import swcol
 def melt_xm(path):
     """
     Args:
@@ -118,15 +122,50 @@ def melt_xm(path):
     XM_report = pd.merge(XM_report, Gene, on=['Date', 'Hora'])
     XM_report = pd.merge(XM_report, GeneIdea, on=['Date', 'Hora'])
 
-    XM_report['Hora'] = XM_report['Hora'].apply(swcol.rain_seasons.extract_hour)
+    XM_report['Hora'] = XM_report['Hora'].apply(sw.rain_seasons.extract_hour)
     XM_report['Date'] = XM_report['Date'].astype(str)
     XM_report['Date'] = XM_report['Date'] + ' ' + XM_report['Hora']
     # Delete column "Hora"
     XM_report = XM_report.drop(columns=['Hora'])
     # Transform into timestamps
-    XM_report = swcol.rain_seasons.format_hours(XM_report)
+    XM_report = sw.rain_seasons.format_hours(XM_report)
     
     XM_report = XM_report.sort_values(by='Date')
     XM_report = XM_report.reset_index(drop=True)
 
     return XM_report
+
+# Generation by Resource
+def add_tech(dema_path):
+    generation = pd.read_csv(dema_path+'Gene_Recurso.csv')
+    generation = generation.drop(generation.columns[:2], axis=1) # Remove the ID column
+    print("Shape Gene_Recurso:",generation.shape)
+
+    ListResour = pd.read_csv(dema_path+'LitadoRecursos_Sistema.csv')
+    ListResour = ListResour[['Values_Code','Values_Type','Values_RecType']]
+    print("Shape LitadoRecursos_Sistema:",ListResour.shape)
+
+    # Add 'Values_Type'(Tech) Column
+    generation = pd.merge(generation, ListResour,
+                          left_on="Values_code", right_on="Values_Code", how="inner")
+    generation = generation.drop(columns=['Values_code','Values_Code'])
+
+    return generation
+
+def melt_dates(generation):
+    generation = pd.melt(generation, id_vars=['Date','Values_Type','Values_RecType'], var_name='Hora', value_name='GeneReal')
+    generation = generation.dropna()# Convert Values into MW
+    generation['GeneReal'] = generation['GeneReal'] / 1000
+    generation['Hora'] = generation['Hora'].apply(sw.rain_seasons.extract_hour)
+    generation['Date'] = generation['Date'].astype(str)
+    generation['Date'] = generation['Date'] + ' ' + generation['Hora']
+    # Delete column "Hora"
+    generation = generation.drop(columns=['Hora'])
+
+    print("Shape Gene_Recurso (Melted):",generation.shape)
+    # Group by Tech
+    generation = generation.groupby(['Date','Values_Type','Values_RecType']).agg({'GeneReal': 'sum'}).reset_index()
+    generation = generation.rename(columns={'Values_Type': 'Technology','Values_RecType': 'Tech_Type'})
+    print("Shape Gene_Recurso (Melted, Group by Tech):",generation.shape)
+
+    return generation

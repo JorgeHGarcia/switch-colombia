@@ -142,10 +142,10 @@ def generate_base_year(model_path, generate_varcaps, base_year, timepoints):
     # Identify projects without variable capacity data
     has_var_cap = set(var_cap_gen['GENERATION_PROJECT'])
     missing_var_cap = gen_info[~gen_info['GENERATION_PROJECT'].isin(has_var_cap)][
-        ['GENERATION_PROJECT', 'gen_tech', 'gen_load_zone']]
+        ['GENERATION_PROJECT', 'gen_energy_source', 'gen_load_zone']]
 
     # Create variable capacity IDs for missing projects
-    missing_var_cap['var_cap_id'] = missing_var_cap['gen_tech'] + missing_var_cap['gen_load_zone']
+    missing_var_cap['var_cap_id'] = missing_var_cap['gen_energy_source'] + missing_var_cap['gen_load_zone']
     missing_var_cap = missing_var_cap[['GENERATION_PROJECT', 'var_cap_id']]
 
     # Merge missing projects with keymap variable capacity

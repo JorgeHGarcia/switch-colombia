@@ -1,0 +1,13 @@
+--inputs-dir inputs
+--verbose
+--stream-solver
+--no-save-solution  # don't save binary .pickle file with full solution
+--suffix dual  # needed for cplex & gurobi solvers w/ Switch 2.0.7
+
+#--full-traceback
+#--log-run
+#--log-level debug
+
+# cplex barrier no crossover:
+--solver cplex
+--solver-options-string "lpmethod=4 solutiontype=2"

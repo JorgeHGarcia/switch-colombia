@@ -1,1 +1,1 @@
-from .src import rain_seasons, time, loads, variable_capacitors, fuel_costs, hydro_timeseries, hydro_capacitors, scenarios
+from .src import rain_seasons, time, loads, variable_capacitors, fuel_costs, hydro_timeseries, hydro_capacitors, scenarios, template

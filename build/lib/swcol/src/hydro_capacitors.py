@@ -55,8 +55,7 @@ def to_swcol_names(model_path, generation):
     """
     gen_build_predetermined = pd.read_csv(model_path + 'gen_build_predetermined.csv')
     gen_info = pd.read_csv(model_path + 'gen_info.csv')
-    gen_info = gen_info[gen_info['gen_energy_source'] == 'RunofRiver']
-
+    gen_info = gen_info[(gen_info['gen_energy_source'] == 'Water') & (gen_info['gen_is_variable'] == 1)]
     # Filter hydro projects active before the base year
     hydro_active = pd.merge(gen_build_predetermined, gen_info, on="GENERATION_PROJECT", how="inner")
     hydro_active = hydro_active[['GENERATION_PROJECT', 'build_gen_predetermined']]
@@ -70,6 +69,8 @@ def to_swcol_names(model_path, generation):
     # Map XM generation data to SWCOL names
     generation = pd.merge(generation, map_xm, left_on="Values_Name", right_on="Best Match", how="inner")
     generation['Datetime'] = pd.to_datetime(generation['Datetime'])
+    # Remove empty values
+    generation['Value'] = generation['Value'].fillna(0)
 
     return generation[['Name', 'Value', 'Datetime']]
 
@@ -104,15 +105,22 @@ def normalize(model_path, generation):
     generation['Value'] = generation['Value'] / generation['build_gen_predetermined']
     generation['Value'] = generation['Value'].clip(upper=1)
 
-    generation = pd.merge(
-        generation, timepoints,
-        on='timestamp', how="inner")
+    generation = pd.merge( generation, timepoints, on='timestamp', how="inner")
 
     generation = generation[['Name', 'timepoint_id', 'Value']]
     generation.rename(columns={
-        'Name': 'GENERATION_PROJECT',
-        'Value': 'gen_max_capacity_factor'
+        'Name': 'GENERATION_PROJECT', 'Value': 'gen_max_capacity_factor'
     }, inplace=True)
+
+    all_timepoints = range(1, 192 + 1)
+    all_projects = generation['GENERATION_PROJECT'].unique()
+    full_index = pd.MultiIndex.from_product(
+        [all_projects, all_timepoints],
+        names=['GENERATION_PROJECT', 'timepoint_id']
+    )
+    generation = generation.set_index(['GENERATION_PROJECT', 'timepoint_id'])\
+        .reindex(full_index, fill_value=0)\
+        .reset_index()
 
     return generation
 

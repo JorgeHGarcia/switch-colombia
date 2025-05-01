@@ -21,6 +21,7 @@ setup(
         "numpy",
         "pandas",
         "matplotlib",
+        "kaleido"
     ],
     python_requires='>=3.9',
 )

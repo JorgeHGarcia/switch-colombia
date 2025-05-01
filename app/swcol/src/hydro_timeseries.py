@@ -68,7 +68,7 @@ def to_swcol_names(model_path, generation, base_year):
 
     # Filter hydro projects active before the base year
     hydro_active = pd.merge(gen_build_predetermined, gen_info, on="GENERATION_PROJECT", how="inner")
-    hydro_active = hydro_active[(hydro_active['gen_tech'] == 'Hidro') & (hydro_active['build_year'] <= base_year)]
+    hydro_active = hydro_active[(hydro_active['gen_energy_source'] == 'Water') & (hydro_active['gen_is_variable'] == 0) & (hydro_active['build_year'] <= base_year)]
     hydro_active = hydro_active[['GENERATION_PROJECT', 'build_gen_predetermined']]
 
     # Load mapping between XM and SWCOL names

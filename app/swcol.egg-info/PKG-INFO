@@ -15,5 +15,6 @@ License-File: LICENSE
 Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: matplotlib
+Requires-Dist: kaleido
 
 switch
