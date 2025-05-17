@@ -49,10 +49,11 @@ def dispatched_generation(dataframe, x_axis, y_axis, color):
         showgrid=True  # Show grid to help align the labels visually
         ),
         yaxis_title="Dispatched Generation (TWh)")
-    fig.update_traces(texttemplate='%{text:.2f}', textposition='inside')
+    fig.update_traces(texttemplate='%{text:.2f}', textposition='inside', textangle=0)
+    fig.write_image("../images/Dispatched Generation.png")
     fig.show()
 
-def annual_emmissions(dataframe, x_axis, y_axis):
+"""def annual_emmissions(dataframe, x_axis, y_axis):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
     fig = px.bar(
         dataframe, x=x_axis, y=y_axis,
@@ -64,6 +65,40 @@ def annual_emmissions(dataframe, x_axis, y_axis):
     # Mejorar la visualización
     fig.update_traces(texttemplate='%{text:.2f}', textposition='outside')
     fig.update_layout(xaxis=dict(tickvals=dataframe[x_axis].to_list()))
+    fig.show()"""
+
+import numpy as np
+import plotly.graph_objects as go
+def annual_emmissions(dataframe, x_axis, y_axis):
+    parse_tech, colors, tech_order, tech_colors = sw.template.get()  # Template
+    # Extraer datos
+    x = dataframe[x_axis].values
+    y = dataframe[y_axis].values
+
+    # Ajuste lineal
+    coeffs = np.polyfit(x, y, 1)  # y = mx + b
+    trend_y = coeffs[0] * x + coeffs[1]
+
+    # Crear figura
+    fig = go.Figure()
+    # Añadir puntos
+    fig.add_trace(go.Scatter(
+        x=x, y=y, mode='markers+text',
+        text=[f'{val:.2f}' for val in y],
+        textposition='top center',
+        marker=dict(color=colors[0])
+    ))
+    # Añadir línea de tendencia
+    fig.add_trace(go.Scatter(
+        x=x, y=trend_y, mode='lines',
+        line=dict(color=colors[1], dash='dash')))
+    # Layout
+    fig.update_layout(
+        template='plotly_white',showlegend=False,
+        height=9*50, width=16*50,
+        xaxis=dict(title='Year', tickvals=x.tolist()),
+        yaxis=dict(title='Annual Emissions (MtCO2)', range=[0, max(max(y), max(trend_y)) * 1.1])
+    )
     fig.show()
 
 from plotly.subplots import make_subplots

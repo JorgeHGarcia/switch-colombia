@@ -135,7 +135,7 @@ def generate(model_path, generation, period, cycles):
         minors_future = generation.copy()
         minors_future['timepoint_id'] = minors_future['timepoint_id'] + (192 * n_timepoints)
         minors_total = pd.concat([minors_total, minors_future], axis=0)
-        n_timepoints += period
+        n_timepoints += 1
 
     minors_total.reset_index(drop=True, inplace=True)
 

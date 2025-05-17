@@ -12,7 +12,7 @@ def cluster(generation):
     return generation
 
 import plotly.express as px
-def plot_multiple_line(generation, sort, x, y, color, title, labels):
+def plot_multiple_line(generation, sort, x, y, color, title, labels, frec=36):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
     generation = generation.sort_values(by=sort)
     fig = px.line(
@@ -25,6 +25,46 @@ def plot_multiple_line(generation, sort, x, y, color, title, labels):
         height=9*50, width=16*50,
         template='plotly_white'
     )
+    fig.update_xaxes(dtick=frec)
+    fig.show()
+
+from plotly.subplots import make_subplots
+def plot_clusterized_loads(loads, year='2023'):
+    loads_year = loads[loads['timestamp'].str.contains(year)]
+    loads_year_labors = loads_year[loads_year['timestamp'].str.contains("labor")].sort_values(by='Date')
+    loads_year_labors['timestamp'] = loads_year_labors['timestamp'].str.replace(r'^\d{4}_(Q\d)_labor_(\d+h)$', r'\1_\2', regex=True)
+    loads_year_holiday = loads_year[loads_year['timestamp'].str.contains("holidays")].sort_values(by='Date')
+    loads_year_holiday['timestamp'] = loads_year_holiday['timestamp'].str.replace(r'^\d{4}_(Q\d)_holidays_(\d+h)$', r'\1_\2', regex=True)
+
+    parse_tech, colors, tech_order, tech_colors = sw.template.get()
+    # Create individual plots
+    fig1 = px.line(loads_year_labors, x='timestamp', y='demand_mw', color='Zone', color_discrete_sequence=colors, title='Labors')
+    fig2 = px.line(loads_year_holiday, x='timestamp', y='demand_mw', color='Zone', color_discrete_sequence=colors, title='Holidays')
+
+    # Create subplots
+    fig = make_subplots(rows=1, cols=2, subplot_titles=("Labor days", "Holidays"))
+    # Add figures to subplots
+    for trace in fig1['data']:
+        fig.add_trace(trace, row=1, col=1)
+    for trace in fig2['data']:
+        fig.add_trace(trace, row=1, col=2)
+
+    # Only show one legend
+    names = set()
+    for trace in fig['data']:
+        if (trace.name in names): trace.showlegend = False
+        else: names.add(trace.name)
+
+    fig.update_layout(
+        title='Clustered Load Curves by Zone in '+year,
+        height=9*50, width=16*50, template="plotly_white",
+        yaxis=dict(range=[0, 4000], title='Demand [MWh]'),
+        yaxis2=dict(range=[0, 4000]),
+    )
+
+    fig.update_xaxes(dtick=6, row=1, col=1)
+    fig.update_xaxes(dtick=6, row=1, col=2)
+    fig.write_image("../images/Clustered Load Curves by Zone in "+year+".png")
     fig.show()
 
 # Replace with new year

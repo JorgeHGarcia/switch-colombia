@@ -165,7 +165,7 @@ def generate_base_year(model_path, generate_varcaps, base_year, timepoints):
     return variable_capacity[['GENERATION_PROJECT', 'timepoint_id', 'gen_max_capacity_factor', 'cycle']]
 
 # Function to generate future variable capacity factors by cycling timepoints
-def generate(model_path, variable_capacity, cycles):
+def generate(model_path, variable_capacity, period, cycles):
     """
     Generate future variable capacity factors by extending timepoints.
 
@@ -182,7 +182,7 @@ def generate(model_path, variable_capacity, cycles):
     for i in range(cycles):
         new_var = variable_capacity.copy()
         new_var['timepoint_id'] += i * 192
-        new_var['skip'] = new_var['cycle'] - i
+        new_var['skip'] = new_var['cycle'] - i*period
         var_caps.append(new_var)
 
     # Concatenate all periods and filter valid entries

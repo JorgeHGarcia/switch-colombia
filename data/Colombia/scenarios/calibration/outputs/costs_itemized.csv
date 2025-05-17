@@ -1,0 +1,7 @@
+PERIOD,Component,Component_type,AnnualCost_NPV,AnnualCost_Real
+2023,EmissionsCosts,annual,0.0,0.0
+2023,FuelCostsPerTP,timepoint,635929216.4719191,658186739.0484377
+2023,GenVariableOMCostsInTP,timepoint,211890241.90570801,219306400.37240827
+2023,StorageEnergyFixedCost,annual,0.0,0.0
+2023,TotalGenFixedCosts,annual,4268421178.670166,4417815919.923632
+2023,TxFixedCosts,annual,288835161.7768466,298944392.4390369

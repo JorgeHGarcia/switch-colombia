@@ -1,7 +1,7 @@
 component,npv_cost
-TotalGenFixedCosts,55198256825.46924
+TotalGenFixedCosts,54404175792.69931
 StorageEnergyFixedCost,0
-TxFixedCosts,3132638528.918758
+TxFixedCosts,3206803369.37146
 EmissionsCosts,0
-GenVariableOMCostsInTP,1612163119.769407
-FuelCostsPerTP,1898189280.858664
+GenVariableOMCostsInTP,1868299268.034398
+FuelCostsPerTP,2533181365.936168

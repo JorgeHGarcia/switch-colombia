@@ -49,10 +49,11 @@ def dispatched_generation(dataframe, x_axis, y_axis, color):
         showgrid=True  # Show grid to help align the labels visually
         ),
         yaxis_title="Dispatched Generation (TWh)")
-    fig.update_traces(texttemplate='%{text:.2f}', textposition='inside')
+    fig.update_traces(texttemplate='%{text:.2f}', textposition='inside', textangle=0)
+    fig.write_image("../images/Dispatched Generation.png")
     fig.show()
 
-def annual_emmissions(dataframe, x_axis, y_axis):
+"""def annual_emmissions(dataframe, x_axis, y_axis):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
     fig = px.bar(
         dataframe, x=x_axis, y=y_axis,
@@ -64,7 +65,39 @@ def annual_emmissions(dataframe, x_axis, y_axis):
     # Mejorar la visualización
     fig.update_traces(texttemplate='%{text:.2f}', textposition='outside')
     fig.update_layout(xaxis=dict(tickvals=dataframe[x_axis].to_list()))
+    fig.show()"""
+
+import numpy as np
+import plotly.graph_objects as go
+
+def annual_emmissions(dataframe, x_axis, y_axis):
+    parse_tech, colors, tech_order, tech_colors = sw.template.get()  # Template
+
+    # Extraer datos
+    x = dataframe[x_axis].values
+    y = dataframe[y_axis].values
+
+    # Crear figura
+    fig = go.Figure()
+    
+    # Añadir línea con texto
+    fig.add_trace(go.Scatter(
+        x=x, y=y, mode='lines+text',
+        text=[f'{val:.2f}' for val in y],
+        textposition='top center',
+        line=dict(color=colors[0])
+    ))
+    
+    # Layout
+    fig.update_layout(
+        template='plotly_white', showlegend=False,
+        height=9*50, width=16*50,
+        xaxis=dict(title='Year', tickvals=x.tolist()),
+        yaxis=dict(title='Annual Emissions (MtCO2)', range=[0, max(y) * 1.1])
+    )
+    
     fig.show()
+
 
 from plotly.subplots import make_subplots
 def installed_capacity(esc0, escf, dataset):

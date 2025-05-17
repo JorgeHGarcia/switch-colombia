@@ -1,17 +1,17 @@
 GENERATION_PROJECT,PERIOD,gen_tech,gen_load_zone,gen_energy_source,BuildGen,BuildStorageEnergy,GenCapitalOutlay
-AMOYA,2023,Hidro,Surocciden,Water,0,0,0
-AMOYA,2024,Hidro,Surocciden,Water,0,0,0
-AMOYA,2025,Hidro,Surocciden,Water,0,0,0
-AMOYA,2026,Hidro,Surocciden,Water,0,0,0
-AMOYA,2027,Hidro,Surocciden,Water,0,0,0
-AMOYA,2028,Hidro,Surocciden,Water,0,0,0
-AMOYA,2029,Hidro,Surocciden,Water,0,0,0
-AMOYA,2030,Hidro,Surocciden,Water,0,0,0
-AMOYA,2031,Hidro,Surocciden,Water,0,0,0
-AMOYA,2032,Hidro,Surocciden,Water,0,0,0
-AMOYA,2033,Hidro,Surocciden,Water,0,0,0
-AMOYA,2034,Hidro,Surocciden,Water,0,0,0
-AMOYA,2035,Hidro,Surocciden,Water,0,0,0
+AMOYA,2023,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2024,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2025,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2026,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2027,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2028,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2029,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2030,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2031,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2032,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2033,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2034,RunOfRiver,Surocciden,Water,0,0,0
+AMOYA,2035,RunOfRiver,Surocciden,Water,0,0,0
 BARRANQUILL3,2023,Thermal,Caribe,GASIMPOR,0,0,0
 BARRANQUILL3,2024,Thermal,Caribe,GASIMPOR,0,0,0
 BARRANQUILL3,2025,Thermal,Caribe,GASIMPOR,0,0,0
@@ -51,19 +51,19 @@ BETANIA,2032,Hidro,Surocciden,Water,0,0,0
 BETANIA,2033,Hidro,Surocciden,Water,0,0,0
 BETANIA,2034,Hidro,Surocciden,Water,0,0,0
 BETANIA,2035,Hidro,Surocciden,Water,0,0,0
-C_LLERAS_R,2023,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2024,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2025,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2026,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2027,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2028,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2029,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2030,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2031,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2032,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2033,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2034,Hidro,Antioquia,Water,0,0,0
-C_LLERAS_R,2035,Hidro,Antioquia,Water,0,0,0
+C_LLERAS_R,2023,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2024,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2025,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2026,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2027,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2028,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2029,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2030,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2031,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2032,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2033,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2034,RunOfRiver,Antioquia,Water,0,0,0
+C_LLERAS_R,2035,RunOfRiver,Antioquia,Water,0,0,0
 CALDERAS,2023,Hidro,Antioquia,Water,0,0,0
 CALDERAS,2024,Hidro,Antioquia,Water,0,0,0
 CALDERAS,2025,Hidro,Antioquia,Water,0,0,0
@@ -168,32 +168,32 @@ CHIVOR,2032,Hidro,Oriental,Water,0,0,0
 CHIVOR,2033,Hidro,Oriental,Water,0,0,0
 CHIVOR,2034,Hidro,Oriental,Water,0,0,0
 CHIVOR,2035,Hidro,Oriental,Water,0,0,0
-CUCUANA,2023,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2024,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2025,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2026,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2027,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2028,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2029,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2030,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2031,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2032,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2033,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2034,Hidro,Surocciden,Water,0,0,0
-CUCUANA,2035,Hidro,Surocciden,Water,0,0,0
-DARIO VALENC,2023,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2024,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2025,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2026,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2027,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2028,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2029,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2030,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2031,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2032,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2033,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2034,Hidro,Oriental,Water,0,0,0
-DARIO VALENC,2035,Hidro,Oriental,Water,0,0,0
+CUCUANA,2023,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2024,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2025,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2026,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2027,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2028,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2029,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2030,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2031,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2032,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2033,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2034,RunOfRiver,Surocciden,Water,0,0,0
+CUCUANA,2035,RunOfRiver,Surocciden,Water,0,0,0
+DARIO VALENC,2023,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2024,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2025,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2026,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2027,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2028,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2029,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2030,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2031,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2032,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2033,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2034,RunOfRiver,Oriental,Water,0,0,0
+DARIO VALENC,2035,RunOfRiver,Oriental,Water,0,0,0
 EL QUIMBO,2023,Hidro,Surocciden,Water,0,0,0
 EL QUIMBO,2024,Hidro,Surocciden,Water,0,0,0
 EL QUIMBO,2025,Hidro,Surocciden,Water,0,0,0
@@ -220,32 +220,32 @@ ELTESORITO,2032,Thermal,Caribe,GASNACIO,0,0,0
 ELTESORITO,2033,Thermal,Caribe,GASNACIO,0,0,0
 ELTESORITO,2034,Thermal,Caribe,GASNACIO,0,0,0
 ELTESORITO,2035,Thermal,Caribe,GASNACIO,0,0,0
-ESCUELAMINAS,2023,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2024,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2025,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2026,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2027,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2028,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2029,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2030,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2031,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2032,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2033,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2034,Hidro,Antioquia,Water,0,0,0
-ESCUELAMINAS,2035,Hidro,Antioquia,Water,0,0,0
-ESMERALDA,2023,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2024,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2025,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2026,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2027,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2028,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2029,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2030,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2031,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2032,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2033,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2034,Hidro,Surocciden,Water,0,0,0
-ESMERALDA,2035,Hidro,Surocciden,Water,0,0,0
+ESCUELAMINAS,2023,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2024,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2025,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2026,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2027,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2028,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2029,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2030,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2031,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2032,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2033,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2034,RunOfRiver,Antioquia,Water,0,0,0
+ESCUELAMINAS,2035,RunOfRiver,Antioquia,Water,0,0,0
+ESMERALDA,2023,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2024,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2025,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2026,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2027,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2028,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2029,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2030,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2031,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2032,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2033,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2034,RunOfRiver,Surocciden,Water,0,0,0
+ESMERALDA,2035,RunOfRiver,Surocciden,Water,0,0,0
 FLORES 1,2023,Thermal,Caribe,GASIMPOR,0,0,0
 FLORES 1,2024,Thermal,Caribe,GASIMPOR,0,0,0
 FLORES 1,2025,Thermal,Caribe,GASIMPOR,0,0,0
@@ -324,45 +324,45 @@ GUAVIO,2032,Hidro,Oriental,Water,0,0,0
 GUAVIO,2033,Hidro,Oriental,Water,0,0,0
 GUAVIO,2034,Hidro,Oriental,Water,0,0,0
 GUAVIO,2035,Hidro,Oriental,Water,0,0,0
-H_AguaFresca,2023,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2024,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2025,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2026,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2027,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2028,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2029,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2030,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2031,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2032,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2033,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2034,RunOfRiver,Antioquia,Water,0,0,0
-H_AguaFresca,2035,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2023,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2024,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2025,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2026,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2027,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2028,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2029,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2030,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2031,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2032,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2033,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2034,RunOfRiver,Antioquia,Water,0,0,0
-H_Alejandria,2035,RunOfRiver,Antioquia,Water,0,0,0
-H_Amaime,2023,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2024,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2025,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2026,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2027,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2028,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2029,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2030,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2031,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2032,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2033,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2034,RunOfRiver,Surocciden,Water,0,0,0
-H_Amaime,2035,RunOfRiver,Surocciden,Water,0,0,0
+H_AguaFresca,2023,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2024,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2025,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2026,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2027,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2028,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2029,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2030,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2031,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2032,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2033,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2034,Hidro,Antioquia,Water,0,0,0
+H_AguaFresca,2035,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2023,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2024,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2025,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2026,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2027,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2028,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2029,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2030,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2031,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2032,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2033,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2034,Hidro,Antioquia,Water,0,0,0
+H_Alejandria,2035,Hidro,Antioquia,Water,0,0,0
+H_Amaime,2023,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2024,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2025,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2026,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2027,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2028,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2029,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2030,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2031,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2032,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2033,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2034,Hidro,Surocciden,Water,0,0,0
+H_Amaime,2035,Hidro,Surocciden,Water,0,0,0
 H_Amalfi,2023,Hidro,Antioquia,Water,0,0,0
 H_Amalfi,2024,Hidro,Antioquia,Water,0,0,0
 H_Amalfi,2025,Hidro,Antioquia,Water,0,0,0
@@ -454,19 +454,19 @@ H_Barrancas,2032,Hidro,Antioquia,Water,0,0,0
 H_Barrancas,2033,Hidro,Antioquia,Water,0,0,0
 H_Barrancas,2034,Hidro,Antioquia,Water,0,0,0
 H_Barrancas,2035,Hidro,Antioquia,Water,0,0,0
-H_Barroso,2023,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2024,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2025,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2026,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2027,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2028,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2029,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2030,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2031,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2032,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2033,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2034,RunOfRiver,Antioquia,Water,0,0,0
-H_Barroso,2035,RunOfRiver,Antioquia,Water,0,0,0
+H_Barroso,2023,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2024,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2025,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2026,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2027,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2028,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2029,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2030,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2031,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2032,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2033,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2034,Hidro,Antioquia,Water,0,0,0
+H_Barroso,2035,Hidro,Antioquia,Water,0,0,0
 H_Bayona,2023,Hidro,Surocciden,Water,0,0,0
 H_Bayona,2024,Hidro,Surocciden,Water,0,0,0
 H_Bayona,2025,Hidro,Surocciden,Water,0,0,0
@@ -519,32 +519,32 @@ H_Cantayus,2032,Hidro,Antioquia,Water,0,0,0
 H_Cantayus,2033,Hidro,Antioquia,Water,0,0,0
 H_Cantayus,2034,Hidro,Antioquia,Water,0,0,0
 H_Cantayus,2035,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2023,Hidro,Antioquia,Water,3.75,0,1.15612e+07
-H_Caracoli,2024,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2025,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2026,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2027,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2028,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2029,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2030,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2031,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2032,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2033,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2034,Hidro,Antioquia,Water,0,0,0
-H_Caracoli,2035,Hidro,Antioquia,Water,0,0,0
-H_Caruquia,2023,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2024,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2025,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2026,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2027,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2028,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2029,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2030,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2031,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2032,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2033,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2034,RunOfRiver,Antioquia,Water,0,0,0
-H_Caruquia,2035,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2023,RunOfRiver,Antioquia,Water,3.75,0,1.15612e+07
+H_Caracoli,2024,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2025,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2026,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2027,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2028,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2029,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2030,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2031,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2032,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2033,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2034,RunOfRiver,Antioquia,Water,0,0,0
+H_Caracoli,2035,RunOfRiver,Antioquia,Water,0,0,0
+H_Caruquia,2023,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2024,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2025,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2026,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2027,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2028,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2029,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2030,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2031,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2032,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2033,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2034,Hidro,Antioquia,Water,0,0,0
+H_Caruquia,2035,Hidro,Antioquia,Water,0,0,0
 H_Cascada,2023,Hidro,Nordeste,Water,0,0,0
 H_Cascada,2024,Hidro,Nordeste,Water,0,0,0
 H_Cascada,2025,Hidro,Nordeste,Water,0,0,0
@@ -766,32 +766,32 @@ H_ElMolino,2032,Hidro,Antioquia,Water,0,0,0
 H_ElMolino,2033,Hidro,Antioquia,Water,0,0,0
 H_ElMolino,2034,Hidro,Antioquia,Water,0,0,0
 H_ElMolino,2035,Hidro,Antioquia,Water,0,0,0
-H_ElPopal,2023,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2024,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2025,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2026,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2027,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2028,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2029,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2030,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2031,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2032,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2033,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2034,RunOfRiver,Antioquia,Water,0,0,0
-H_ElPopal,2035,RunOfRiver,Antioquia,Water,0,0,0
-H_Florida,2023,Hidro,Surocciden,Water,0,0,0
-H_Florida,2024,Hidro,Surocciden,Water,0,0,0
-H_Florida,2025,Hidro,Surocciden,Water,0,0,0
-H_Florida,2026,Hidro,Surocciden,Water,0,0,0
-H_Florida,2027,Hidro,Surocciden,Water,0,0,0
-H_Florida,2028,Hidro,Surocciden,Water,0,0,0
-H_Florida,2029,Hidro,Surocciden,Water,0,0,0
-H_Florida,2030,Hidro,Surocciden,Water,0,0,0
-H_Florida,2031,Hidro,Surocciden,Water,0,0,0
-H_Florida,2032,Hidro,Surocciden,Water,0,0,0
-H_Florida,2033,Hidro,Surocciden,Water,0,0,0
-H_Florida,2034,Hidro,Surocciden,Water,0,0,0
-H_Florida,2035,Hidro,Surocciden,Water,0,0,0
+H_ElPopal,2023,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2024,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2025,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2026,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2027,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2028,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2029,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2030,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2031,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2032,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2033,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2034,Hidro,Antioquia,Water,0,0,0
+H_ElPopal,2035,Hidro,Antioquia,Water,0,0,0
+H_Florida,2023,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2024,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2025,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2026,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2027,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2028,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2029,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2030,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2031,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2032,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2033,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2034,RunOfRiver,Surocciden,Water,0,0,0
+H_Florida,2035,RunOfRiver,Surocciden,Water,0,0,0
 H_Frisolera,2023,Hidro,Surocciden,Water,0,0,0
 H_Frisolera,2024,Hidro,Surocciden,Water,0,0,0
 H_Frisolera,2025,Hidro,Surocciden,Water,0,0,0
@@ -818,19 +818,19 @@ H_Guacaica,2032,Hidro,Surocciden,Water,0,0,0
 H_Guacaica,2033,Hidro,Surocciden,Water,0,0,0
 H_Guacaica,2034,Hidro,Surocciden,Water,0,0,0
 H_Guacaica,2035,Hidro,Surocciden,Water,0,0,0
-H_Guanaquita,2023,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2024,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2025,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2026,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2027,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2028,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2029,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2030,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2031,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2032,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2033,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2034,RunOfRiver,Antioquia,Water,0,0,0
-H_Guanaquita,2035,RunOfRiver,Antioquia,Water,0,0,0
+H_Guanaquita,2023,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2024,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2025,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2026,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2027,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2028,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2029,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2030,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2031,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2032,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2033,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2034,Hidro,Antioquia,Water,0,0,0
+H_Guanaquita,2035,Hidro,Antioquia,Water,0,0,0
 H_Guaviomeno,2023,Hidro,Oriental,Water,0,0,0
 H_Guaviomeno,2024,Hidro,Oriental,Water,0,0,0
 H_Guaviomeno,2025,Hidro,Oriental,Water,0,0,0
@@ -844,19 +844,19 @@ H_Guaviomeno,2032,Hidro,Oriental,Water,0,0,0
 H_Guaviomeno,2033,Hidro,Oriental,Water,0,0,0
 H_Guaviomeno,2034,Hidro,Oriental,Water,0,0,0
 H_Guaviomeno,2035,Hidro,Oriental,Water,0,0,0
-H_Herradura,2023,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2024,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2025,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2026,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2027,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2028,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2029,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2030,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2031,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2032,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2033,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2034,Hidro,Antioquia,Water,0,0,0
-H_Herradura,2035,Hidro,Antioquia,Water,0,0,0
+H_Herradura,2023,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2024,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2025,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2026,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2027,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2028,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2029,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2030,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2031,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2032,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2033,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2034,RunOfRiver,Antioquia,Water,0,0,0
+H_Herradura,2035,RunOfRiver,Antioquia,Water,0,0,0
 H_Inza,2023,Hidro,Surocciden,Water,0,0,0
 H_Inza,2024,Hidro,Surocciden,Water,0,0,0
 H_Inza,2025,Hidro,Surocciden,Water,0,0,0
@@ -1052,19 +1052,19 @@ H_Montanitas,2032,RunOfRiver,Antioquia,Water,0,0,0
 H_Montanitas,2033,RunOfRiver,Antioquia,Water,0,0,0
 H_Montanitas,2034,RunOfRiver,Antioquia,Water,0,0,0
 H_Montanitas,2035,RunOfRiver,Antioquia,Water,0,0,0
-H_MorroAzul,2023,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2024,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2025,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2026,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2027,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2028,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2029,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2030,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2031,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2032,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2033,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2034,RunOfRiver,Surocciden,Water,0,0,0
-H_MorroAzul,2035,RunOfRiver,Surocciden,Water,0,0,0
+H_MorroAzul,2023,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2024,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2025,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2026,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2027,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2028,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2029,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2030,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2031,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2032,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2033,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2034,Hidro,Surocciden,Water,0,0,0
+H_MorroAzul,2035,Hidro,Surocciden,Water,0,0,0
 H_Municipal,2023,Hidro,Surocciden,Water,0,0,0
 H_Municipal,2024,Hidro,Surocciden,Water,0,0,0
 H_Municipal,2025,Hidro,Surocciden,Water,0,0,0
@@ -1221,19 +1221,19 @@ H_Porce3Meno,2032,Hidro,Antioquia,Water,0,0,0
 H_Porce3Meno,2033,Hidro,Antioquia,Water,0,0,0
 H_Porce3Meno,2034,Hidro,Antioquia,Water,0,0,0
 H_Porce3Meno,2035,Hidro,Antioquia,Water,0,0,0
-H_ProvidencI,2023,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2024,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2025,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2026,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2027,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2028,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2029,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2030,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2031,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2032,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2033,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2034,RunOfRiver,Caribe,Water,0,0,0
-H_ProvidencI,2035,RunOfRiver,Caribe,Water,0,0,0
+H_ProvidencI,2023,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2024,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2025,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2026,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2027,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2028,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2029,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2030,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2031,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2032,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2033,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2034,Hidro,Caribe,Water,0,0,0
+H_ProvidencI,2035,Hidro,Caribe,Water,0,0,0
 H_Puente_Gui,2023,Hidro,Nordeste,Water,0,0,0
 H_Puente_Gui,2024,Hidro,Nordeste,Water,0,0,0
 H_Puente_Gui,2025,Hidro,Nordeste,Water,0,0,0
@@ -1312,19 +1312,19 @@ H_RioFrioI,2032,Hidro,Surocciden,Water,0,0,0
 H_RioFrioI,2033,Hidro,Surocciden,Water,0,0,0
 H_RioFrioI,2034,Hidro,Surocciden,Water,0,0,0
 H_RioFrioI,2035,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2023,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2024,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2025,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2026,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2027,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2028,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2029,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2030,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2031,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2032,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2033,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2034,Hidro,Surocciden,Water,0,0,0
-H_RioFrioII,2035,Hidro,Surocciden,Water,0,0,0
+H_RioFrioII,2023,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2024,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2025,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2026,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2027,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2028,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2029,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2030,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2031,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2032,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2033,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2034,RunOfRiver,Surocciden,Water,0,0,0
+H_RioFrioII,2035,RunOfRiver,Surocciden,Water,0,0,0
 H_RioFrioTam,2023,Hidro,Antioquia,Water,0,0,0
 H_RioFrioTam,2024,Hidro,Antioquia,Water,0,0,0
 H_RioFrioTam,2025,Hidro,Antioquia,Water,0,0,0
@@ -1351,19 +1351,19 @@ H_RioGrande,2032,Hidro,Surocciden,Water,0,0,0
 H_RioGrande,2033,Hidro,Surocciden,Water,0,0,0
 H_RioGrande,2034,Hidro,Surocciden,Water,0,0,0
 H_RioGrande,2035,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2023,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2024,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2025,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2026,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2027,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2028,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2029,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2030,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2031,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2032,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2033,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2034,Hidro,Surocciden,Water,0,0,0
-H_RioMayo,2035,Hidro,Surocciden,Water,0,0,0
+H_RioMayo,2023,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2024,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2025,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2026,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2027,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2028,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2029,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2030,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2031,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2032,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2033,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2034,RunOfRiver,Surocciden,Water,0,0,0
+H_RioMayo,2035,RunOfRiver,Surocciden,Water,0,0,0
 H_RioMulato2,2023,Hidro,Antioquia,Water,0,0,0
 H_RioMulato2,2024,Hidro,Antioquia,Water,0,0,0
 H_RioMulato2,2025,Hidro,Antioquia,Water,0,0,0
@@ -1403,19 +1403,19 @@ H_RioPalo,2032,Hidro,Surocciden,Water,0,0,0
 H_RioPalo,2033,Hidro,Surocciden,Water,0,0,0
 H_RioPalo,2034,Hidro,Surocciden,Water,0,0,0
 H_RioPalo,2035,Hidro,Surocciden,Water,0,0,0
-H_RioPiedras,2023,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2024,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2025,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2026,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2027,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2028,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2029,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2030,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2031,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2032,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2033,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2034,Hidro,Antioquia,Water,0,0,0
-H_RioPiedras,2035,Hidro,Antioquia,Water,0,0,0
+H_RioPiedras,2023,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2024,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2025,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2026,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2027,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2028,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2029,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2030,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2031,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2032,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2033,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2034,RunOfRiver,Antioquia,Water,0,0,0
+H_RioPiedras,2035,RunOfRiver,Antioquia,Water,0,0,0
 H_RioSapuye,2023,Hidro,Surocciden,Water,0,0,0
 H_RioSapuye,2024,Hidro,Surocciden,Water,0,0,0
 H_RioSapuye,2025,Hidro,Surocciden,Water,0,0,0
@@ -1624,32 +1624,32 @@ H_Sueva2,2032,Hidro,Oriental,Water,0,0,0
 H_Sueva2,2033,Hidro,Oriental,Water,0,0,0
 H_Sueva2,2034,Hidro,Oriental,Water,0,0,0
 H_Sueva2,2035,Hidro,Oriental,Water,0,0,0
-H_TuluaAlto,2023,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2024,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2025,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2026,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2027,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2028,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2029,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2030,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2031,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2032,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2033,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2034,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaAlto,2035,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2023,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2024,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2025,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2026,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2027,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2028,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2029,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2030,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2031,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2032,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2033,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2034,RunOfRiver,Surocciden,Water,0,0,0
-H_TuluaBajo,2035,RunOfRiver,Surocciden,Water,0,0,0
+H_TuluaAlto,2023,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2024,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2025,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2026,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2027,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2028,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2029,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2030,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2031,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2032,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2033,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2034,Hidro,Surocciden,Water,0,0,0
+H_TuluaAlto,2035,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2023,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2024,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2025,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2026,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2027,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2028,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2029,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2030,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2031,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2032,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2033,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2034,Hidro,Surocciden,Water,0,0,0
+H_TuluaBajo,2035,Hidro,Surocciden,Water,0,0,0
 H_Tunjita,2023,Hidro,Oriental,Water,0,0,0
 H_Tunjita,2024,Hidro,Oriental,Water,0,0,0
 H_Tunjita,2025,Hidro,Oriental,Water,0,0,0
@@ -2248,19 +2248,19 @@ RIOGRANDE 1,2032,Hidro,Antioquia,Water,0,0,0
 RIOGRANDE 1,2033,Hidro,Antioquia,Water,0,0,0
 RIOGRANDE 1,2034,Hidro,Antioquia,Water,0,0,0
 RIOGRANDE 1,2035,Hidro,Antioquia,Water,0,0,0
-SALTO II,2023,Hidro,Oriental,Water,0,0,0
-SALTO II,2024,Hidro,Oriental,Water,0,0,0
-SALTO II,2025,Hidro,Oriental,Water,0,0,0
-SALTO II,2026,Hidro,Oriental,Water,0,0,0
-SALTO II,2027,Hidro,Oriental,Water,0,0,0
-SALTO II,2028,Hidro,Oriental,Water,0,0,0
-SALTO II,2029,Hidro,Oriental,Water,0,0,0
-SALTO II,2030,Hidro,Oriental,Water,0,0,0
-SALTO II,2031,Hidro,Oriental,Water,0,0,0
-SALTO II,2032,Hidro,Oriental,Water,0,0,0
-SALTO II,2033,Hidro,Oriental,Water,0,0,0
-SALTO II,2034,Hidro,Oriental,Water,0,0,0
-SALTO II,2035,Hidro,Oriental,Water,0,0,0
+SALTO II,2023,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2024,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2025,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2026,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2027,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2028,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2029,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2030,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2031,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2032,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2033,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2034,RunOfRiver,Oriental,Water,0,0,0
+SALTO II,2035,RunOfRiver,Oriental,Water,0,0,0
 SALVAJINA,2023,Hidro,Surocciden,Water,0,0,0
 SALVAJINA,2024,Hidro,Surocciden,Water,0,0,0
 SALVAJINA,2025,Hidro,Surocciden,Water,0,0,0
@@ -2287,32 +2287,32 @@ SAN CARLOS,2032,Hidro,Antioquia,Water,0,0,0
 SAN CARLOS,2033,Hidro,Antioquia,Water,0,0,0
 SAN CARLOS,2034,Hidro,Antioquia,Water,0,0,0
 SAN CARLOS,2035,Hidro,Antioquia,Water,0,0,0
-SANFRANCISCO,2023,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2024,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2025,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2026,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2027,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2028,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2029,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2030,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2031,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2032,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2033,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2034,Hidro,Surocciden,Water,0,0,0
-SANFRANCISCO,2035,Hidro,Surocciden,Water,0,0,0
-SNMIGUEL,2023,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2024,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2025,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2026,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2027,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2028,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2029,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2030,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2031,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2032,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2033,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2034,Hidro,Antioquia,Water,0,0,0
-SNMIGUEL,2035,Hidro,Antioquia,Water,0,0,0
+SANFRANCISCO,2023,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2024,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2025,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2026,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2027,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2028,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2029,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2030,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2031,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2032,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2033,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2034,RunOfRiver,Surocciden,Water,0,0,0
+SANFRANCISCO,2035,RunOfRiver,Surocciden,Water,0,0,0
+SNMIGUEL,2023,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2024,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2025,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2026,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2027,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2028,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2029,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2030,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2031,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2032,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2033,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2034,RunOfRiver,Antioquia,Water,0,0,0
+SNMIGUEL,2035,RunOfRiver,Antioquia,Water,0,0,0
 SOGAMOSO,2023,Hidro,Nordeste,Water,0,0,0
 SOGAMOSO,2024,Hidro,Nordeste,Water,0,0,0
 SOGAMOSO,2025,Hidro,Nordeste,Water,0,0,0
