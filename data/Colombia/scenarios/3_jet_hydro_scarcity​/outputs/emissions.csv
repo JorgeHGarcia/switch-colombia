@@ -1,0 +1,8 @@
+PERIOD,AnnualEmissions_tCO2_per_yr,carbon_cap_tco2_per_yr,carbon_cap_dual_future_dollar_per_tco2,carbon_cost_dollar_per_tco2,carbon_cost_annual_total
+2023,1.426e+07,14260000,-16.7484,0,0
+2025,7.94941e+06,13280000,1.81723e-07,0,0
+2030,3.7412e+06,10820000,2.15803e-07,0,0
+2035,3.20019e+06,8370000,2.56047e-07,0,0
+2040,2.90655e+06,5910000,3.03606e-07,0,0
+2045,3.46e+06,3460000,-15.5891,0,0
+2050,1e+06,1000000,-192.955,0,0

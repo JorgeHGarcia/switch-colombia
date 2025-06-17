@@ -23,7 +23,7 @@ def table(model_outputs_path, model_inputs_path):
     return pivot_table
 
 import plotly.express as px
-def dispatched_generation(dataframe, x_axis, y_axis, color):
+def dispatched_generation(dataframe, x_axis, y_axis, color, folder, scenario):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
     # Change values on gen_tech to match Switch output
     dataframe[color] = dataframe[color].replace(parse_tech)
@@ -33,7 +33,7 @@ def dispatched_generation(dataframe, x_axis, y_axis, color):
     fig = px.bar(
         dataframe, x=x_axis, y=y_axis,
         text=y_axis,
-        color=color, title='Generation Dispatch Over Time by Technology',
+        color=color, title='Generation Dispatch Over Time by Technology ('+scenario+')',
         labels={y_axis: 'Dispatched Generation (MW)', x_axis: 'Year'},
         color_discrete_map=tech_colors,
         category_orders={"Tech": tech_order},
@@ -50,36 +50,18 @@ def dispatched_generation(dataframe, x_axis, y_axis, color):
         ),
         yaxis_title="Dispatched Generation (TWh)")
     fig.update_traces(texttemplate='%{text:.2f}', textposition='inside', textangle=0)
-    fig.write_image("../images/Dispatched Generation.png")
+    fig.write_image("../images/scenarios/"+folder+"/Dispatched Generation "+scenario+".png")
     fig.show()
-
-"""def annual_emmissions(dataframe, x_axis, y_axis):
-    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
-    fig = px.bar(
-        dataframe, x=x_axis, y=y_axis,
-        color_discrete_sequence=[colors[0]],
-        labels={y_axis: 'Annual Emissions (MtCO2)', x_axis: 'Year'},
-        text=y_axis,
-        height=9*50, width=16*50,
-        template='plotly_white',)
-    # Mejorar la visualización
-    fig.update_traces(texttemplate='%{text:.2f}', textposition='outside')
-    fig.update_layout(xaxis=dict(tickvals=dataframe[x_axis].to_list()))
-    fig.show()"""
 
 import numpy as np
 import plotly.graph_objects as go
-
-def annual_emmissions(dataframe, x_axis, y_axis):
+def annual_emmissions(dataframe, x_axis, y_axis, folder, scenario):
     parse_tech, colors, tech_order, tech_colors = sw.template.get()  # Template
-
     # Extraer datos
     x = dataframe[x_axis].values
     y = dataframe[y_axis].values
-
     # Crear figura
-    fig = go.Figure()
-    
+    fig = go.Figure()   
     # Añadir línea con texto
     fig.add_trace(go.Scatter(
         x=x, y=y, mode='lines+text',
@@ -87,18 +69,18 @@ def annual_emmissions(dataframe, x_axis, y_axis):
         textposition='top center',
         line=dict(color=colors[0])
     ))
-    
     # Layout
     fig.update_layout(
-        template='plotly_white', showlegend=False,
-        height=9*50, width=16*50,
+        template='plotly_white', showlegend=False, height=9*50, width=16*50,
         xaxis=dict(title='Year', tickvals=x.tolist()),
-        yaxis=dict(title='Annual Emissions (MtCO2)', range=[0, max(y) * 1.1])
-    )
-    
+        yaxis=dict(title='Annual Emissions (MtCO2)', range=[0, max(y) * 1.1]),
+        title='Annual Emissions Over Time ('+scenario+')'
+    )    
+    fig.write_image("../images/scenarios/"+folder+"/Annual Emissions Over Time "+scenario+".png")
     fig.show()
 
 
+"""
 from plotly.subplots import make_subplots
 def installed_capacity(esc0, escf, dataset):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
@@ -142,4 +124,53 @@ def installed_capacity(esc0, escf, dataset):
     )
     fig.write_image(f"../images/Installed Capacity ({dataset}).png")
     # Show the figure
+    fig.show()
+"""
+
+def installed_capacity(esc0, escf, year0, yearf, scenario, model):
+    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
+
+    esc0['Tech'] = esc0['Tech'].replace(parse_tech)
+    escf['Tech'] = escf['Tech'].replace(parse_tech)
+    # Inside donut chart values
+    labels_inner = esc0['Tech'].tolist()
+    values_inner = esc0['BuildGen'].tolist()
+    # Inner donut chart values
+    label_inner = ['blank']
+    value_inner = [100]
+    color_inner = ['#FFFFFF']
+    # Outer donut chart values
+    labels_outer = escf['Tech'].tolist()
+    values_outer = escf['BuildGen'].tolist()
+
+    fig = go.Figure()
+    # Inside ring
+    fig.add_trace(go.Pie(
+        labels=labels_inner, values=values_inner,
+        hole=0.4, direction='clockwise', sort=True,
+        marker=dict(colors=[tech_colors[label] for label in labels_inner]),
+        textinfo='percent', textposition='inside', showlegend=True,
+    domain=dict(x=[0.25, 0.75], y=[0.25, 0.75])
+    ))
+    # Inner ring
+    fig.add_trace(go.Pie(
+        labels=label_inner, values=value_inner,
+        hole=0.6, marker=dict(colors=color_inner),
+        showlegend=False,
+        domain=dict(x=[0, 1], y=[0, 1])
+    ))
+    # Outer ring
+    fig.add_trace(go.Pie(
+        labels=labels_outer, values=values_outer,
+        hole=0.7, direction='clockwise', sort=True,
+        marker=dict(colors=[tech_colors[label] for label in labels_outer]),
+        textinfo='percent', textposition='inside', showlegend=True,
+        domain=dict(x=[0, 1], y=[0, 1])
+    ))
+    fig.update_layout(
+        title_text="Installed Capacity ("+model+"). "+year0+" Inner - "+yearf+" Outer",
+        height=9*50, width=16*50, template='plotly_white',
+        margin=dict(t=100, b=50, l=50, r=50)
+    )
+    fig.write_image(f"../images/scenarios/{scenario}/Installed Capacity {model}.png")
     fig.show()

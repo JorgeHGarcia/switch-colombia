@@ -31,6 +31,7 @@ def plot_multiple_line(generation, sort, x, y, color, title, labels, frec=36):
 from plotly.subplots import make_subplots
 def plot_clusterized_loads(loads, year='2023'):
     loads_year = loads[loads['timestamp'].str.contains(year)]
+    loads_year['Zone'] = loads_year['Zone'].replace({'Surocciden': 'Suroccidente'})
     loads_year_labors = loads_year[loads_year['timestamp'].str.contains("labor")].sort_values(by='Date')
     loads_year_labors['timestamp'] = loads_year_labors['timestamp'].str.replace(r'^\d{4}_(Q\d)_labor_(\d+h)$', r'\1_\2', regex=True)
     loads_year_holiday = loads_year[loads_year['timestamp'].str.contains("holidays")].sort_values(by='Date')
@@ -60,6 +61,12 @@ def plot_clusterized_loads(loads, year='2023'):
         height=9*50, width=16*50, template="plotly_white",
         yaxis=dict(range=[0, 4000], title='Demand [MWh]'),
         yaxis2=dict(range=[0, 4000]),
+        legend=dict(
+            orientation="h",
+            y=-0.3, x=0.5,
+            xanchor='center'
+        ),
+        font_family="Arial", font_size=14
     )
 
     fig.update_xaxes(dtick=6, row=1, col=1)
