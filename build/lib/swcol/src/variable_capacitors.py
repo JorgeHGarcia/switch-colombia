@@ -165,7 +165,7 @@ def generate_base_year(model_path, generate_varcaps, base_year, timepoints):
     return variable_capacity[['GENERATION_PROJECT', 'timepoint_id', 'gen_max_capacity_factor', 'cycle']]
 
 # Function to generate future variable capacity factors by cycling timepoints
-def generate(model_path, variable_capacity, cycles):
+def generate(model_path, variable_capacity, period, cycles):
     """
     Generate future variable capacity factors by extending timepoints.
 
@@ -182,7 +182,7 @@ def generate(model_path, variable_capacity, cycles):
     for i in range(cycles):
         new_var = variable_capacity.copy()
         new_var['timepoint_id'] += i * 192
-        new_var['skip'] = new_var['cycle'] - i
+        new_var['skip'] = new_var['cycle'] - i*period
         var_caps.append(new_var)
 
     # Concatenate all periods and filter valid entries
@@ -195,3 +195,113 @@ def generate(model_path, variable_capacity, cycles):
     print('Variable Capacity Factors saved in ../../model/inputs/variable_capacity_factors.csv')
 
     return extended_variable_capacity
+
+import swcol as sw
+from plotly.subplots import make_subplots
+import plotly.express as px
+import plotly.graph_objects as go
+
+def plot_variable_capacity(model_path, hydro_variable_capacity, timepoints):
+    gen_info=pd.read_csv(model_path+'gen_info.csv')
+    mean_vc = pd.merge(hydro_variable_capacity, timepoints, on='timepoint_id', how="inner")
+    mean_vc = pd.merge(mean_vc, gen_info, on='GENERATION_PROJECT', how="inner")
+    mean_vc = mean_vc[mean_vc['timepoint_id'] <= 192]
+
+    mean_vc[['Year', 'Quarter', 'Type', 'Hour']] = mean_vc['timestamp'].str.extract(r'(\d{4})_(Q\d)_(\w+)_(\d+)h')
+    mean_vc["Hour"] = mean_vc["Hour"].astype(int)
+    mean_vc = mean_vc.sort_values(by=['Hour'])
+    mean_vc = mean_vc[['gen_max_capacity_factor','gen_tech','Quarter','Type','Hour']]
+
+    mean_vc = mean_vc.groupby(['Quarter','gen_tech','Type','Hour']).agg({
+        'gen_max_capacity_factor': 'mean'
+    }).reset_index()
+
+    mean_vc['Quarter'] = mean_vc['Quarter'].replace({'Q1': 'Quarter 1', 'Q2': 'Quarter 2', 'Q3': 'Quarter 3', 'Q4': 'Quarter 4'})
+    mean_lab_solar_vc = mean_vc[(mean_vc['gen_tech'] == 'pv_solar') & (mean_vc['Type'] == 'labor')]
+    mean_lab_wind_vc = mean_vc[(mean_vc['gen_tech'] == 'Eolica') & (mean_vc['Type'] == 'labor')]
+    mean_lab_hydro_vc = mean_vc[(mean_vc['gen_tech'] == 'Hidro') & (mean_vc['Type'] == 'labor')]
+    mean_lab_river_vc = mean_vc[(mean_vc['gen_tech'] == 'RunOfRiver') & (mean_vc['Type'] == 'labor')]
+
+    # Colores personalizados para cada quarter
+    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
+    quarter_order = ['Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4']
+    color_map = dict(zip(quarter_order, colors))
+    # Crear figura de subplots
+    fig = make_subplots(
+        rows=2, cols=2, shared_xaxes=False, shared_yaxes=False, vertical_spacing=0.15,
+        subplot_titles=["Solar - Labor Days", "Wind - Labor Days","Hydro (<20 MW) - Labor Days","Run of River (<20 MW) - Labor Days"],
+    )
+    # Función para agregar trazos
+    def add_traces(fig, data, row, col):
+        quarters = data['Quarter'].unique()
+        for quarter in quarters:
+            subset = data[data['Quarter'] == quarter]
+            fig.add_trace(
+                go.Scatter(
+                    x=subset['Hour'],
+                    y=subset['gen_max_capacity_factor'],
+                    mode='lines+markers',
+                    name=quarter,  # Solo el quarter como nombre
+                    legendgroup=quarter,  # Agrupar leyenda por quarter
+                    showlegend=(col == 1 and row == 1),  # Mostrar la leyenda solo en la primera columna
+                    line=dict(color=color_map.get(quarter, '#000000'))  # Color personalizado
+                ),
+                row=row, col=col
+            )
+    # Agregar datos
+    add_traces(fig, mean_lab_solar_vc, row=1, col=1)
+    add_traces(fig, mean_lab_wind_vc, row=1, col=2)
+    add_traces(fig, mean_lab_hydro_vc, row=2, col=1)
+    add_traces(fig, mean_lab_river_vc, row=2, col=2)
+
+    # Layout general
+    fig.update_layout(
+        height=9*80, width=16*50,
+        title_text="Variable Capacity Factors",
+        template="plotly_white",
+        legend=dict(
+            orientation="h",
+            y=-0.1, x=0.5,
+            xanchor='center'
+        ),
+        font_family="Arial", font_size=14
+    )
+
+    # Configurar ejes
+    fig.update_xaxes(dtick=2, row=1)
+    fig.update_xaxes(dtick=2, title_text="Hours", row=2)
+    fig.update_yaxes(title_text="Capacity Factors [%]", col=1)
+    fig.update_yaxes(range=[0, 1])
+
+    fig.write_image("../images/Mean Capacity Factors (Wind - Solar).png")
+    fig.show()
+
+def plot_all_capacities(model_path, hydro_variable_capacity, timepoints, base_year):
+    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
+
+    gen_info=pd.read_csv(model_path+'gen_info.csv')
+    plot_var_cap = pd.merge(hydro_variable_capacity, timepoints, on='timepoint_id', how="inner")
+    plot_var_cap = pd.merge(plot_var_cap, gen_info, on='GENERATION_PROJECT')
+
+    plot_var_cap['Tech'] = plot_var_cap['gen_tech'].replace(parse_tech)
+    plot_var_cap['Tech'] = pd.Categorical(plot_var_cap['Tech'], categories=['Hydro', 'Run of River', 'Solar', 'Wind'], ordered=True)
+
+    plot_var_cap = plot_var_cap[
+        ['GENERATION_PROJECT', 'Tech', 'timepoint_id', 'gen_max_capacity_factor', 'timestamp', 'timeseries']].sort_values(by=['timepoint_id', 'Tech'])
+    plot_var_cap['timestamp'] = plot_var_cap['timestamp'].str.replace(r'^\d{4}_', '', regex=True)
+
+    project_color_map = plot_var_cap.drop_duplicates("GENERATION_PROJECT").set_index("GENERATION_PROJECT")["Tech"].map(tech_colors).to_dict()
+
+    fig = px.line(
+        plot_var_cap[plot_var_cap['timepoint_id'] <= 192],
+        x="timestamp", y="gen_max_capacity_factor",
+        title="Capacity Factors "+str(base_year),
+        labels={"timestamp": "Timestamp", "gen_max_capacity_factor": "Capacity Factor", 'GENERATION_PROJECT':'Generation Projects'},
+        color="GENERATION_PROJECT",
+        color_discrete_map=project_color_map,
+        height=9*50, width=16*50,
+        template="plotly_white"
+    )
+    fig.update_layout(yaxis=dict(range=[0, 1]))
+    fig.update_xaxes(dtick=6)
+    fig.show()

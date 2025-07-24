@@ -23,39 +23,53 @@ def table(model_outputs_path, model_inputs_path):
     return pivot_table
 
 import plotly.express as px
-def dispatched_generation(dataframe, x_axis, y_axis, color, folder, scenario):
+def dispatched_generation(dataframe, title, units, x_axis, y_axis, color, folder, scenario, threshold = 0, img_path='../../images'):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
     # Change values on gen_tech to match Switch output
     dataframe[color] = dataframe[color].replace(parse_tech)
     dataframe = dataframe.groupby([x_axis, color]).agg({
         y_axis : 'sum'}).reset_index()
     dataframe = dataframe.sort_values(by=[x_axis,y_axis], ascending=[True,False])
+    dataframe['text'] = dataframe[y_axis].apply(lambda val: f'{val:.2f}' if val >= threshold else '')
     fig = px.bar(
         dataframe, x=x_axis, y=y_axis,
-        text=y_axis,
-        color=color, title='Generation Dispatch Over Time by Technology ('+scenario+')',
+        text='text',
+        color=color, title=title+' Over Time by Technology ('+scenario+')',
         labels={y_axis: 'Dispatched Generation (MW)', x_axis: 'Year'},
         color_discrete_map=tech_colors,
         category_orders={"Tech": tech_order},
-        height=9*50, width=16*50,
+        height=9*60, width=16*50,
         template='plotly_white',)
 
     unique_years = dataframe[x_axis].unique()
     # Update layout for better readability if needed
-    fig.update_layout(barmode='stack', xaxis_title="Timestamp", xaxis=dict(
-        tickvals=unique_years,
-        tickangle=-45,
-        tickfont=dict(size=10),  # Adjust the font size for better fit
-        showgrid=True  # Show grid to help align the labels visually
+    fig.update_layout(
+        barmode='stack',
+        xaxis_title="",
+        xaxis=dict(
+            tickvals=unique_years,
+            tickangle=0,
+            tickfont=dict(size=14, family='Arial'),
+            showgrid=True
         ),
-        yaxis_title="Dispatched Generation (TWh)")
-    fig.update_traces(texttemplate='%{text:.2f}', textposition='inside', textangle=0)
-    fig.write_image("../images/scenarios/"+folder+"/Dispatched Generation "+scenario+".png")
+        yaxis_title=title+" ["+units+"/year]",
+        legend=dict(
+            orientation="h",
+            y=-0.1,  x=0.5,
+            xanchor='center'
+        ),
+        font_family="Arial",
+        font_size=14,
+        legend_title_text=None
+    )
+    fig.update_traces(texttemplate='%{text:.1f}', textposition='inside',  insidetextanchor='middle', textangle=0)
     fig.show()
+    fig.write_image(img_path+"/scenarios/"+folder+"/"+title+" "+scenario+".png")
+    
 
 import numpy as np
 import plotly.graph_objects as go
-def annual_emmissions(dataframe, x_axis, y_axis, folder, scenario):
+def annual_emmissions(dataframe, x_axis, y_axis, folder, scenario, img_path='../../images'):
     parse_tech, colors, tech_order, tech_colors = sw.template.get()  # Template
     # Extraer datos
     x = dataframe[x_axis].values
@@ -67,67 +81,76 @@ def annual_emmissions(dataframe, x_axis, y_axis, folder, scenario):
         x=x, y=y, mode='lines+text',
         text=[f'{val:.2f}' for val in y],
         textposition='top center',
+        textfont=dict(size=14, family='Arial'),
         line=dict(color=colors[0])
     ))
     # Layout
     fig.update_layout(
         template='plotly_white', showlegend=False, height=9*50, width=16*50,
-        xaxis=dict(title='Year', tickvals=x.tolist()),
-        yaxis=dict(title='Annual Emissions (MtCO2)', range=[0, max(y) * 1.1]),
-        title='Annual Emissions Over Time ('+scenario+')'
+        font=dict(size=16, family='Arial'),
+        xaxis=dict(
+            title='', 
+            tickvals=x.tolist(),
+            titlefont=dict(size=18, family='Arial'),
+            tickfont=dict(size=14, family='Arial')
+        ),
+        yaxis=dict(
+            title='Annual Emissions [MtCO2]', 
+            range=[0, max(y) * 1.1],
+            titlefont=dict(size=18, family='Arial'),
+            tickfont=dict(size=14, family='Arial')
+        ),
+        title=dict(
+            text='Annual Emissions Over Time (' + scenario + ')',
+            font=dict(size=20, family='Arial')
+        )
     )    
-    fig.write_image("../images/scenarios/"+folder+"/Annual Emissions Over Time "+scenario+".png")
+    fig.write_image(img_path+"/scenarios/"+folder+"/Annual Emissions Over Time "+scenario+".png")
     fig.show()
 
+def annual_emissions_combined(dataframes, x_axis, y_axis, labels, colors, folder, title, img_path='../../images'):
+    fig = go.Figure()
 
-"""
-from plotly.subplots import make_subplots
-def installed_capacity(esc0, escf, dataset):
-    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
-    esc0['Tech'] = esc0['Tech'].replace(parse_tech)
-    escf['Tech'] = escf['Tech'].replace(parse_tech)
+    for i, df in enumerate(dataframes):
+        x = df[x_axis].values
+        y = df[y_axis].values
+        fig.add_trace(go.Scatter(
+            x=x, y=y, mode='lines+text',
+            name=labels[i],
+            line=dict(color=colors[i])
+        ))
 
-    # Create individual figures
-    fig1 = px.pie(
-        esc0, names='Tech', values='BuildGen', color='Tech',
-        color_discrete_map=tech_colors, category_orders={"Tech": tech_order})
-    fig2 = px.pie(
-        escf, names='Tech', values='BuildGen', color='Tech',
-        color_discrete_map=tech_colors, category_orders={"Tech": tech_order})
-    
-    # Create subplots
-    fig = make_subplots(rows=1, cols=2,
-                       specs=[[{'type':'domain'}, {'type':'domain'}]], 
-                       subplot_titles=("2023", "2037"))
-
-    # Add figures to the subplots
-    for trace in fig1.data: 
-        fig.add_trace(trace, row=1, col=1)
-    for trace in fig2.data: 
-        fig.add_trace(trace, row=1, col=2)
-
-    # Forzar mostrar todas las leyendas
-    fig.update_traces(
-        showlegend=True,
-        selector=lambda t: True  # Aplica a todos los trazos
-    )
-
-    # Move subplot titles to bottom
-    for annotation in fig['layout']['annotations']:
-        annotation['y'] = -0.05  # Adjust this value as needed
-        annotation['yanchor'] = 'top'  # Anchor to top of the text (which is now below the plot)
-
-    # Set fixed figure size and adjust margins if needed
     fig.update_layout(
-        height=9*50, width=16*50,
-        title_text=f"Installed Capacity ({dataset})",  # Main title
+        template='plotly_white', height=9*50, width=16*50,
+        font=dict(size=16, family='Arial'),
+        xaxis=dict(
+            title='', 
+            tickvals=sorted(set().union(*(df[x_axis] for df in dataframes))),
+            titlefont=dict(size=18, family='Arial'),
+            tickfont=dict(size=14, family='Arial')
+        ),
+        yaxis=dict(
+            title='Emissions [MtCO<sub>2</sub>/Year]', 
+            range=[0, max([df[y_axis].max() for df in dataframes]) * 1.1],
+            titlefont=dict(size=16, family='Arial'),
+            tickfont=dict(size=14, family='Arial')
+        ),
+        title=dict(
+            text='Annual Emissions Over Time (' + title + ')',
+            font=dict(size=20, family='Arial')
+        ),
+        showlegend=True,        
+        legend=dict(
+            orientation="h",
+            y=-0.1, x=0.5,
+            xanchor='center'
+        )
     )
-    fig.write_image(f"../images/Installed Capacity ({dataset}).png")
-    # Show the figure
-    fig.show()
-"""
 
-def installed_capacity(esc0, escf, year0, yearf, scenario, model):
+    fig.write_image(img_path+"/scenarios/" + folder + "/Annual Emissions Over Time " + title + ".png")
+    fig.show()
+
+def installed_capacity(esc0, escf, year0, yearf, scenario, model, img_path='../../images'):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
 
     esc0['Tech'] = esc0['Tech'].replace(parse_tech)
@@ -172,5 +195,5 @@ def installed_capacity(esc0, escf, year0, yearf, scenario, model):
         height=9*50, width=16*50, template='plotly_white',
         margin=dict(t=100, b=50, l=50, r=50)
     )
-    fig.write_image(f"../images/scenarios/{scenario}/Installed Capacity {model}.png")
+    fig.write_image(f"{img_path}/scenarios/{scenario}/Installed Capacity {model}.png")
     fig.show()

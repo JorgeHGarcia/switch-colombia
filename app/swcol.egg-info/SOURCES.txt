@@ -8,6 +8,7 @@ app/swcol.egg-info/dependency_links.txt
 app/swcol.egg-info/requires.txt
 app/swcol.egg-info/top_level.txt
 app/swcol/src/__init__.py
+app/swcol/src/dispatch.py
 app/swcol/src/fuel_costs.py
 app/swcol/src/hydro_capacitors.py
 app/swcol/src/hydro_timeseries.py

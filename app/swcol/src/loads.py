@@ -30,11 +30,11 @@ def plot_multiple_line(generation, sort, x, y, color, title, labels, frec=36):
 
 from plotly.subplots import make_subplots
 def plot_clusterized_loads(loads, year='2023'):
-    loads_year = loads[loads['timestamp'].str.contains(year)]
+    loads_year = loads[loads['timestamp'].str.contains(year)].copy()
     loads_year['Zone'] = loads_year['Zone'].replace({'Surocciden': 'Suroccidente'})
-    loads_year_labors = loads_year[loads_year['timestamp'].str.contains("labor")].sort_values(by='Date')
+    loads_year_labors = loads_year[loads_year['timestamp'].str.contains("labor")].sort_values(by='Date').copy()
     loads_year_labors['timestamp'] = loads_year_labors['timestamp'].str.replace(r'^\d{4}_(Q\d)_labor_(\d+h)$', r'\1_\2', regex=True)
-    loads_year_holiday = loads_year[loads_year['timestamp'].str.contains("holidays")].sort_values(by='Date')
+    loads_year_holiday = loads_year[loads_year['timestamp'].str.contains("holidays")].sort_values(by='Date').copy()
     loads_year_holiday['timestamp'] = loads_year_holiday['timestamp'].str.replace(r'^\d{4}_(Q\d)_holidays_(\d+h)$', r'\1_\2', regex=True)
 
     parse_tech, colors, tech_order, tech_colors = sw.template.get()
@@ -73,6 +73,66 @@ def plot_clusterized_loads(loads, year='2023'):
     fig.update_xaxes(dtick=6, row=1, col=2)
     fig.write_image("../images/Clustered Load Curves by Zone in "+year+".png")
     fig.show()
+
+# Plot transmision lines
+import geopandas as gpd
+import matplotlib.pyplot as plt
+from matplotlib.colors import Normalize
+from shapely.geometry import LineString
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+def plot_transmission_lines(transmission_lines, zones, zones_points):
+    #Mapa redes
+    # Create LineString geometries for transmission lines
+    lines_geometry = []
+    for index, row in transmission_lines.iterrows():
+        start_point = zones_points[zones_points['Zone'] == row['trans_lz1']]['geometry'].values[0]
+        end_point = zones_points[zones_points['Zone'] == row['trans_lz2']]['geometry'].values[0]
+        lines_geometry.append(LineString([start_point, end_point]))
+
+    # Create a GeoDataFrame for transmission lines
+    lines_gdf = gpd.GeoDataFrame(transmission_lines, geometry=lines_geometry)
+
+    # Explicitly set min and max values for 'existing_trans_cap'
+    min_existing_trans_cap = 500
+    max_existing_trans_cap = 1400
+
+    # Normalize the values of 'existing_trans_cap' based on min and max
+    lines_gdf['normalized_existing_trans_cap'] = Normalize(vmin=min_existing_trans_cap, vmax=max_existing_trans_cap)(lines_gdf['existing_trans_cap'])
+
+    # Plot the zones' polygons
+    fig, ax = plt.subplots(figsize=(10, 10))
+
+    # Plot zones' polygons (excluding "Extra")
+    zones[~zones['Zone'].str.contains('Extra')].plot(ax=ax, color='#ffffff', edgecolor='black', linewidth=0.5)
+    # Plot zones' polygons for "Extra"
+    zones[zones['Zone'] == 'Extra'].plot(ax=ax, color='#ffffff', edgecolor='black', linewidth=0.5, alpha=0.7)
+
+    # Plot transmission lines between centroids with normalized color mapping
+    divider = make_axes_locatable(ax)
+    cax = divider.append_axes("right", size="5%", pad=0.1)
+
+    from matplotlib.colors import LinearSegmentedColormap
+    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
+    lines_gdf.plot(ax=ax, linewidth=8, cmap=LinearSegmentedColormap.from_list("cmap", [colors[3], colors[1]]), alpha=0.7, column='normalized_existing_trans_cap', legend=True, cax=cax)
+
+    ax.set_xlabel('Longitude', fontsize=12)
+    ax.set_ylabel('Latitude', fontsize=12)
+
+    # Set colorbar labels and ticks
+    cax.set_ylabel("Transmission Capacity [MWh]", fontsize=14)
+    cax.set_yticklabels([f'{val:.0f}' for val in [min_existing_trans_cap, max_existing_trans_cap]])
+    cax.yaxis.set_ticks([0, 1])  # Normalize the ticks
+
+    # Add zone names on top of each area (excluding "Extra")
+    zones['Zone'] = zones['Zone'].replace({'Surocciden': 'Suroccidente'})
+    for idx, row in zones.iterrows():
+        if row['Zone'] != 'Extra':
+            ax.annotate(row['Zone'], (row['geometry'].centroid.x, row['geometry'].centroid.y),
+                ha='center', va='center', color='black', fontsize=12)
+
+
+    # Show the plot
+    plt.show()
 
 # Replace with new year
 def replace_year(timestamp, new_year):
