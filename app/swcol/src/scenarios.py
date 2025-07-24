@@ -62,7 +62,7 @@ def dispatched_generation(dataframe, title, units, x_axis, y_axis, color, folder
         font_size=14,
         legend_title_text=None
     )
-    fig.update_traces(texttemplate='%{text:.2f}', textposition='inside',  insidetextanchor='middle', textangle=0)
+    fig.update_traces(texttemplate='%{text:.1f}', textposition='inside',  insidetextanchor='middle', textangle=0)
     fig.show()
     fig.write_image("../images/scenarios/"+folder+"/"+title+" "+scenario+".png")
     
