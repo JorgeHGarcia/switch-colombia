@@ -9,5 +9,5 @@
 #--log-level debug
 
 # cplex barrier no crossover:
---solver cplex
---solver-options-string "lpmethod=4 solutiontype=2"
+# --solver cplex
+# --solver-options-string "lpmethod=4 solutiontype=2"

@@ -60,7 +60,7 @@ H_ElBosque,1935,2.28
 H_Municipal,1935,1.4
 H_Union,1935,0.7
 H_Belmonte,1939,3.4
-H_Ovejas,1939,0.8199999999999998
+H_Ovejas,1939,0.82
 H_Nima,1942,6.7
 H_Bayona,1943,0.6
 H_Cascada,1954,3.0
@@ -73,7 +73,7 @@ H_CampestreC,1956,0.7
 H_VentanaA,1957,2.5
 H_VentanaB,1957,2.5
 H_Mondomo,1958,0.75
-H_Rio_Recio,1958,0.9840000000000002
+H_Rio_Recio,1958,0.984
 H_RioBobo,1960,4.0
 H_RioPalo,1960,1.44
 ESMERALDA,1963,30.0
@@ -231,7 +231,7 @@ S_Palmira3_Franca,2023,2.9
 S_SalvadorI,2023,0.01
 S_SalvadorII,2023,0.0
 S_AutSolla,2023,6.4
-S_AutEncanto,2023,0.9900000000000002
+S_AutEncanto,2023,0.99
 S_Uruaco,2023,1.0
 S_Harinas,2022,2.45
 S_AutLevapan,2022,4.99
