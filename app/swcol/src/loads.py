@@ -71,7 +71,9 @@ def plot_clusterized_loads(loads, year='2023'):
 
     fig.update_xaxes(dtick=6, row=1, col=1)
     fig.update_xaxes(dtick=6, row=1, col=2)
-    fig.write_image("../images/Clustered Load Curves by Zone in "+year+".png")
+    fig.write_image("../images/Clustered_Load_Curves_by_Zone_in_"+year+".png")
+    loads_year_labors.to_csv(f"../images/Clustered_Load_Labors_{year}.csv", index=False)
+    loads_year_holiday.to_csv(f"../images/Clustered_Load_Holidays_{year}.csv", index=False)
     fig.show()
 
 # Plot transmision lines

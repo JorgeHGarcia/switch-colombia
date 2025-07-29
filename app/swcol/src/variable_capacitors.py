@@ -273,7 +273,20 @@ def plot_variable_capacity(model_path, hydro_variable_capacity, timepoints):
     fig.update_yaxes(title_text="Capacity Factors [%]", col=1)
     fig.update_yaxes(range=[0, 1])
 
-    fig.write_image("../images/Mean Capacity Factors (Wind - Solar).png")
+    fig.write_image("../images/Mean_Capacity_Factors_(Wind_Solar).png")
+    mean_lab_solar_vc = mean_vc[(mean_vc['gen_tech'] == 'pv_solar') & (mean_vc['Type'] == 'labor')].copy()
+    mean_lab_wind_vc = mean_vc[(mean_vc['gen_tech'] == 'Eolica') & (mean_vc['Type'] == 'labor')].copy()
+    mean_lab_hydro_vc = mean_vc[(mean_vc['gen_tech'] == 'Hidro') & (mean_vc['Type'] == 'labor')].copy()
+    mean_lab_river_vc = mean_vc[(mean_vc['gen_tech'] == 'RunOfRiver') & (mean_vc['Type'] == 'labor')].copy()
+
+    combined = pd.concat([
+        mean_lab_solar_vc,
+        mean_lab_wind_vc,
+        mean_lab_hydro_vc,
+        mean_lab_river_vc
+    ])
+    combined.to_csv("../images/Mean_Capacity_All_Techs_Labor.csv", index=False)
+
     fig.show()
 
 def plot_all_capacities(model_path, hydro_variable_capacity, timepoints, base_year):
