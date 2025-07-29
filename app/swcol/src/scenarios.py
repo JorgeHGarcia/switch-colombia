@@ -23,26 +23,29 @@ def table(model_outputs_path, model_inputs_path):
     return pivot_table
 
 import plotly.express as px
-def dispatched_generation(dataframe, title, units, x_axis, y_axis, color, folder, scenario, threshold = 0, img_path='../../images'):
-    parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
-    # Change values on gen_tech to match Switch output
-    dataframe[color] = dataframe[color].replace(parse_tech)
-    dataframe = dataframe.groupby([x_axis, color]).agg({
-        y_axis : 'sum'}).reset_index()
-    dataframe = dataframe.sort_values(by=[x_axis,y_axis], ascending=[True,False])
-    dataframe['text'] = dataframe[y_axis].apply(lambda val: f'{val:.2f}' if val >= threshold else '')
+def dispatched_generation(dataframe, title, units, x_axis, y_axis, color, folder, scenario, threshold=0, img_path='../../images'):
+    parse_tech, colors, tech_order, tech_colors = sw.template.get()  # Template
+    # Copiar para evitar SettingWithCopyWarning
+    df = dataframe.copy()
+    # Reemplazar etiquetas tecnológicas según el template
+    df[color] = df[color].replace(parse_tech)
+    # Agrupar y agregar
+    df = df.groupby([x_axis, color]).agg({y_axis: 'sum'}).reset_index()
+    df = df.sort_values(by=[x_axis, y_axis], ascending=[True, False])
+    # Etiquetas de texto condicionales
+    df['text'] = df[y_axis].apply(lambda val: f'{val:.2f}' if val >= threshold else '')
+    # Gráfico de barras
     fig = px.bar(
-        dataframe, x=x_axis, y=y_axis,
-        text='text',
-        color=color, title=title+' Over Time by Technology ('+scenario+')',
+        df, x=x_axis, y=y_axis, text='text',
+        color=color, title=f'{title} Over Time by Technology ({scenario})',
         labels={y_axis: 'Dispatched Generation (MW)', x_axis: 'Year'},
         color_discrete_map=tech_colors,
         category_orders={"Tech": tech_order},
         height=9*60, width=16*50,
-        template='plotly_white',)
-
-    unique_years = dataframe[x_axis].unique()
-    # Update layout for better readability if needed
+        template='plotly_white',
+    )
+    # Configurar layout
+    unique_years = df[x_axis].unique()
     fig.update_layout(
         barmode='stack',
         xaxis_title="",
@@ -52,20 +55,24 @@ def dispatched_generation(dataframe, title, units, x_axis, y_axis, color, folder
             tickfont=dict(size=14, family='Arial'),
             showgrid=True
         ),
-        yaxis_title=title+" ["+units+"/year]",
+        yaxis_title=f"{title} [{units}/year]",
         legend=dict(
             orientation="h",
-            y=-0.1,  x=0.5,
+            y=-0.1, x=0.5,
             xanchor='center'
         ),
         font_family="Arial",
         font_size=14,
         legend_title_text=None
     )
-    fig.update_traces(texttemplate='%{text:.1f}', textposition='inside',  insidetextanchor='middle', textangle=0)
-    fig.show()
+    fig.update_traces(
+        texttemplate='%{text}', 
+        textposition='inside', 
+        insidetextanchor='middle', 
+        textangle=0
+    )
     fig.write_image(img_path+"/scenarios/"+folder+"/"+title+" "+scenario+".png")
-    
+    df.to_csv(img_path+"/scenarios/"+folder+"/"+title+" "+scenario+".csv", index=False)    
 
 import numpy as np
 import plotly.graph_objects as go
@@ -107,20 +114,24 @@ def annual_emmissions(dataframe, x_axis, y_axis, folder, scenario, img_path='../
     )    
     fig.write_image(img_path+"/scenarios/"+folder+"/Annual Emissions Over Time "+scenario+".png")
     fig.show()
+    dataframe.to_csv(img_path+"/scenarios/"+folder+"/Annual Emissions Over Time "+scenario+".csv", index=False)
 
 def annual_emissions_combined(dataframes, x_axis, y_axis, labels, colors, folder, title, img_path='../../images'):
     fig = go.Figure()
+    combined_df = pd.DataFrame()
 
     for i, df in enumerate(dataframes):
+        df_copy = df.copy()
+        df_copy['Scenario'] = labels[i]
+        combined_df = pd.concat([combined_df, df_copy[[x_axis, y_axis, 'Scenario']]], ignore_index=True)
+
         x = df[x_axis].values
         y = df[y_axis].values
         fig.add_trace(go.Scatter(
-            x=x, y=y, mode='lines+text',
-            name=labels[i],
-            line=dict(color=colors[i])
-        ))
-
-    fig.update_layout(
+            x=x, y=y, mode='lines+text', name=labels[i],
+            line=dict(color=colors[i])))
+    
+        fig.update_layout(
         template='plotly_white', height=9*50, width=16*50,
         font=dict(size=16, family='Arial'),
         xaxis=dict(
@@ -146,9 +157,9 @@ def annual_emissions_combined(dataframes, x_axis, y_axis, labels, colors, folder
             xanchor='center'
         )
     )
-
     fig.write_image(img_path+"/scenarios/" + folder + "/Annual Emissions Over Time " + title + ".png")
     fig.show()
+    combined_df.to_csv(img_path+"/scenarios/" + folder + "/Annual Emissions Over Time " + title + ".csv", index=False)
 
 def installed_capacity(esc0, escf, year0, yearf, scenario, model, img_path='../../images'):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template

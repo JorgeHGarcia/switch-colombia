@@ -336,7 +336,6 @@ def plot_q1_generation(gen_res, gen_disp, tech_colors, tech_order):
 
 plot_q1_generation(gen_res, gen_disp, tech_colors, tech_order)
 """
-
 def plot_q1_generation(gen_res, gen_disp):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template
     for df in [gen_res, gen_disp]:
@@ -356,6 +355,7 @@ def plot_q1_generation(gen_res, gen_disp):
         ('Labor', 'Pred'): (2, 1), ('Holiday', 'Pred'): (2, 2),
     }
     legend_shown = set()
+    export_rows = []
     for daytype in daytypes:
         for tipo, source in [('Real', gen_res), ('Pred', gen_disp)]:
             df_source = source[(source['DayType'] == daytype) & (source['Quarter'] == 'Q1')]
@@ -379,6 +379,13 @@ def plot_q1_generation(gen_res, gen_disp):
                     ),
                     row=position_map[(daytype, tipo)][0],
                     col=position_map[(daytype, tipo)][1]
+                )
+                export_rows.append(
+                    df_tech.assign(
+                        DayType=daytype,
+                        Source=tipo,
+                        Subplot=f"{tipo}-{daytype}"
+                    )
                 )
     # Final Layout
     fig.update_layout(
@@ -418,7 +425,9 @@ def plot_q1_generation(gen_res, gen_disp):
         xanchor="center"
     )
 
-    fig.write_image(f"../images/Q1 Generation (XM - Switch).png")
+    fig.write_image(f"../images/Q1_Generation (XM - Switch).png")
+    df_export = pd.concat(export_rows)
+    df_export.to_csv("../images/Q1_Generation (XM - Switch).csv", index=False)
     fig.show()
 
 def plot_generation_per_typical_day(gen_res, gen_disp):
@@ -496,7 +505,7 @@ def plot_generation_per_typical_day(gen_res, gen_disp):
     for annotation in fig['layout']['annotations']:
         annotation['font'] = dict(size=18)
 
-    fig.write_image(f"../images/Anual Generation 2023 (XM - Switch)).png")
+    fig.write_image(f"../images/Anual_Generation_2023_(XM - Switch.png")
     fig.show()
-    #gen_disp_grouped.to_csv('./8_switch.csv')
-    #gen_res_grouped.to_csv('./8_xm.csv')
+    gen_disp_grouped.to_csv(f"../images/Anual_Generation_2023_Switch.csv")
+    gen_res_grouped.to_csv(f"../images/Anual_Generation_2023_XM.csv")
