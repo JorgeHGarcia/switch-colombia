@@ -72,6 +72,7 @@ def dispatched_generation(dataframe, title, units, x_axis, y_axis, color, folder
         textangle=0
     )
     fig.write_image(img_path+"/scenarios/"+folder+"/"+title+" "+scenario+".png")
+    fig.show()
     df.to_csv(img_path+"/scenarios/"+folder+"/"+title+" "+scenario+".csv", index=False)    
 
 import numpy as np
