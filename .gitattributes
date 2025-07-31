@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+text=auto
+
+data/Colombia/scenarios/0_upme/outputs/dispatch.csv filter=lfs diff=lfs merge=lfs -text
+data/Colombia/scenarios/1_upme/outputs/dispatch.csv filter=lfs diff=lfs merge=lfs -text
+model/outputs/dispatch.csv filter=lfs diff=lfs merge=lfs -text
