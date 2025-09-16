@@ -117,126 +117,126 @@ timestamp,Tech,DispatchGen_MW,Quarter,DayType,Hour,Source,Subplot
 2023_Q1_L_21h,Wind,23.228203896103896,Q1,Labor,21h,Real,Real-Labor
 2023_Q1_L_22h,Wind,22.79565974025974,Q1,Labor,22h,Real,Real-Labor
 2023_Q1_L_23h,Wind,22.503550909090908,Q1,Labor,23h,Real,Real-Labor
-2023_Q1_L_0h,Hydro,6804.8462648832565,Q1,Labor,0h,Pred,Pred-Labor
-2023_Q1_L_1h,Hydro,6473.392959624846,Q1,Labor,1h,Pred,Pred-Labor
-2023_Q1_L_2h,Hydro,6255.690269472429,Q1,Labor,2h,Pred,Pred-Labor
-2023_Q1_L_3h,Hydro,6115.054844993019,Q1,Labor,3h,Pred,Pred-Labor
-2023_Q1_L_4h,Hydro,6022.537074123886,Q1,Labor,4h,Pred,Pred-Labor
-2023_Q1_L_5h,Hydro,6112.97079139873,Q1,Labor,5h,Pred,Pred-Labor
-2023_Q1_L_6h,Hydro,6328.7883350625,Q1,Labor,6h,Pred,Pred-Labor
-2023_Q1_L_7h,Hydro,6379.691557388576,Q1,Labor,7h,Pred,Pred-Labor
-2023_Q1_L_8h,Hydro,6649.814022890441,Q1,Labor,8h,Pred,Pred-Labor
-2023_Q1_L_9h,Hydro,6909.708057573906,Q1,Labor,9h,Pred,Pred-Labor
-2023_Q1_L_10h,Hydro,7033.7075767217675,Q1,Labor,10h,Pred,Pred-Labor
-2023_Q1_L_11h,Hydro,7181.026202153961,Q1,Labor,11h,Pred,Pred-Labor
-2023_Q1_L_12h,Hydro,7336.790486862023,Q1,Labor,12h,Pred,Pred-Labor
-2023_Q1_L_13h,Hydro,7332.623928762032,Q1,Labor,13h,Pred,Pred-Labor
-2023_Q1_L_14h,Hydro,7393.268826670236,Q1,Labor,14h,Pred,Pred-Labor
-2023_Q1_L_15h,Hydro,7523.554665637507,Q1,Labor,15h,Pred,Pred-Labor
-2023_Q1_L_16h,Hydro,7593.259853727976,Q1,Labor,16h,Pred,Pred-Labor
-2023_Q1_L_17h,Hydro,7544.4631434919165,Q1,Labor,17h,Pred,Pred-Labor
-2023_Q1_L_18h,Hydro,7436.385734055716,Q1,Labor,18h,Pred,Pred-Labor
-2023_Q1_L_19h,Hydro,7793.596771775278,Q1,Labor,19h,Pred,Pred-Labor
-2023_Q1_L_20h,Hydro,7872.317231489128,Q1,Labor,20h,Pred,Pred-Labor
-2023_Q1_L_21h,Hydro,7683.831741987581,Q1,Labor,21h,Pred,Pred-Labor
-2023_Q1_L_22h,Hydro,7406.52515558038,Q1,Labor,22h,Pred,Pred-Labor
-2023_Q1_L_23h,Hydro,7093.062882268203,Q1,Labor,23h,Pred,Pred-Labor
-2023_Q1_L_0h,Run of River,458.6293884558632,Q1,Labor,0h,Pred,Pred-Labor
-2023_Q1_L_1h,Run of River,455.5716934039831,Q1,Labor,1h,Pred,Pred-Labor
-2023_Q1_L_2h,Run of River,461.5522030360973,Q1,Labor,2h,Pred,Pred-Labor
-2023_Q1_L_3h,Run of River,447.206007457579,Q1,Labor,3h,Pred,Pred-Labor
-2023_Q1_L_4h,Run of River,465.03737693425353,Q1,Labor,4h,Pred,Pred-Labor
-2023_Q1_L_5h,Run of River,445.6535878609485,Q1,Labor,5h,Pred,Pred-Labor
-2023_Q1_L_6h,Run of River,452.2830305662948,Q1,Labor,6h,Pred,Pred-Labor
-2023_Q1_L_7h,Run of River,474.33865521273947,Q1,Labor,7h,Pred,Pred-Labor
-2023_Q1_L_8h,Run of River,468.6941394720094,Q1,Labor,8h,Pred,Pred-Labor
-2023_Q1_L_9h,Run of River,473.9651513653838,Q1,Labor,9h,Pred,Pred-Labor
-2023_Q1_L_10h,Run of River,486.22032871282283,Q1,Labor,10h,Pred,Pred-Labor
-2023_Q1_L_11h,Run of River,487.669862803337,Q1,Labor,11h,Pred,Pred-Labor
-2023_Q1_L_12h,Run of River,474.40072214606437,Q1,Labor,12h,Pred,Pred-Labor
-2023_Q1_L_13h,Run of River,482.637471827134,Q1,Labor,13h,Pred,Pred-Labor
-2023_Q1_L_14h,Run of River,489.25882203475004,Q1,Labor,14h,Pred,Pred-Labor
-2023_Q1_L_15h,Run of River,491.8268928693462,Q1,Labor,15h,Pred,Pred-Labor
-2023_Q1_L_16h,Run of River,485.3330540161365,Q1,Labor,16h,Pred,Pred-Labor
-2023_Q1_L_17h,Run of River,486.48105996984305,Q1,Labor,17h,Pred,Pred-Labor
-2023_Q1_L_18h,Run of River,499.0772618569968,Q1,Labor,18h,Pred,Pred-Labor
-2023_Q1_L_19h,Run of River,498.9023115130217,Q1,Labor,19h,Pred,Pred-Labor
-2023_Q1_L_20h,Run of River,504.14363985075556,Q1,Labor,20h,Pred,Pred-Labor
-2023_Q1_L_21h,Run of River,498.3362244530535,Q1,Labor,21h,Pred,Pred-Labor
-2023_Q1_L_22h,Run of River,492.0472233677174,Q1,Labor,22h,Pred,Pred-Labor
-2023_Q1_L_23h,Run of River,486.52352323789444,Q1,Labor,23h,Pred,Pred-Labor
-2023_Q1_L_0h,Thermal,3973.376450719385,Q1,Labor,0h,Pred,Pred-Labor
-2023_Q1_L_1h,Thermal,3959.613098949849,Q1,Labor,1h,Pred,Pred-Labor
-2023_Q1_L_2h,Thermal,3970.30795949112,Q1,Labor,2h,Pred,Pred-Labor
-2023_Q1_L_3h,Thermal,3982.6203538541217,Q1,Labor,3h,Pred,Pred-Labor
-2023_Q1_L_4h,Thermal,3989.070786246845,Q1,Labor,4h,Pred,Pred-Labor
-2023_Q1_L_5h,Thermal,3978.7447719936526,Q1,Labor,5h,Pred,Pred-Labor
-2023_Q1_L_6h,Thermal,3959.116059870755,Q1,Labor,6h,Pred,Pred-Labor
-2023_Q1_L_7h,Thermal,3946.9790020109667,Q1,Labor,7h,Pred,Pred-Labor
-2023_Q1_L_8h,Thermal,3943.121628222651,Q1,Labor,8h,Pred,Pred-Labor
-2023_Q1_L_9h,Thermal,3978.2177486306136,Q1,Labor,9h,Pred,Pred-Labor
-2023_Q1_L_10h,Thermal,4021.3498073624723,Q1,Labor,10h,Pred,Pred-Labor
-2023_Q1_L_11h,Thermal,4089.8908121551103,Q1,Labor,11h,Pred,Pred-Labor
-2023_Q1_L_12h,Thermal,4154.67184940367,Q1,Labor,12h,Pred,Pred-Labor
-2023_Q1_L_13h,Thermal,4157.831207689202,Q1,Labor,13h,Pred,Pred-Labor
-2023_Q1_L_14h,Thermal,4184.104643881868,Q1,Labor,14h,Pred,Pred-Labor
-2023_Q1_L_15h,Thermal,4225.9072041806985,Q1,Labor,15h,Pred,Pred-Labor
-2023_Q1_L_16h,Thermal,4244.952899916828,Q1,Labor,16h,Pred,Pred-Labor
-2023_Q1_L_17h,Thermal,4237.501221960431,Q1,Labor,17h,Pred,Pred-Labor
-2023_Q1_L_18h,Thermal,4211.712347296644,Q1,Labor,18h,Pred,Pred-Labor
-2023_Q1_L_19h,Thermal,4274.909402412914,Q1,Labor,19h,Pred,Pred-Labor
-2023_Q1_L_20h,Thermal,4280.384883127571,Q1,Labor,20h,Pred,Pred-Labor
-2023_Q1_L_21h,Thermal,4264.700327269937,Q1,Labor,21h,Pred,Pred-Labor
-2023_Q1_L_22h,Thermal,4198.270557361339,Q1,Labor,22h,Pred,Pred-Labor
-2023_Q1_L_23h,Thermal,4065.071553332495,Q1,Labor,23h,Pred,Pred-Labor
+2023_Q1_L_0h,Hydro,6942.476739584273,Q1,Labor,0h,Pred,Pred-Labor
+2023_Q1_L_1h,Hydro,6608.444865711492,Q1,Labor,1h,Pred,Pred-Labor
+2023_Q1_L_2h,Hydro,6415.536502317554,Q1,Labor,2h,Pred,Pred-Labor
+2023_Q1_L_3h,Hydro,6278.700942207458,Q1,Labor,3h,Pred,Pred-Labor
+2023_Q1_L_4h,Hydro,6212.227848196217,Q1,Labor,4h,Pred,Pred-Labor
+2023_Q1_L_5h,Hydro,6292.408366028709,Q1,Labor,5h,Pred,Pred-Labor
+2023_Q1_L_6h,Hydro,6486.843507216054,Q1,Labor,6h,Pred,Pred-Labor
+2023_Q1_L_7h,Hydro,6545.5447440286725,Q1,Labor,7h,Pred,Pred-Labor
+2023_Q1_L_8h,Hydro,6802.595171537202,Q1,Labor,8h,Pred,Pred-Labor
+2023_Q1_L_9h,Hydro,7096.475584693316,Q1,Labor,9h,Pred,Pred-Labor
+2023_Q1_L_10h,Hydro,7269.367633651181,Q1,Labor,10h,Pred,Pred-Labor
+2023_Q1_L_11h,Hydro,7479.156327463256,Q1,Labor,11h,Pred,Pred-Labor
+2023_Q1_L_12h,Hydro,7668.456617086025,Q1,Labor,12h,Pred,Pred-Labor
+2023_Q1_L_13h,Hydro,7672.795544137874,Q1,Labor,13h,Pred,Pred-Labor
+2023_Q1_L_14h,Hydro,7749.552153436814,Q1,Labor,14h,Pred,Pred-Labor
+2023_Q1_L_15h,Hydro,7897.301049543541,Q1,Labor,15h,Pred,Pred-Labor
+2023_Q1_L_16h,Hydro,7957.413288248994,Q1,Labor,16h,Pred,Pred-Labor
+2023_Q1_L_17h,Hydro,7908.5882260565495,Q1,Labor,17h,Pred,Pred-Labor
+2023_Q1_L_18h,Hydro,7793.5399567167715,Q1,Labor,18h,Pred,Pred-Labor
+2023_Q1_L_19h,Hydro,8158.7475742009865,Q1,Labor,19h,Pred,Pred-Labor
+2023_Q1_L_20h,Hydro,8255.499713499234,Q1,Labor,20h,Pred,Pred-Labor
+2023_Q1_L_21h,Hydro,8052.632876629052,Q1,Labor,21h,Pred,Pred-Labor
+2023_Q1_L_22h,Hydro,7743.327487790017,Q1,Labor,22h,Pred,Pred-Labor
+2023_Q1_L_23h,Hydro,7333.434906498062,Q1,Labor,23h,Pred,Pred-Labor
+2023_Q1_L_0h,Run of River,383.4844527682345,Q1,Labor,0h,Pred,Pred-Labor
+2023_Q1_L_1h,Run of River,379.90678685704995,Q1,Labor,1h,Pred,Pred-Labor
+2023_Q1_L_2h,Run of River,378.1042622736049,Q1,Labor,2h,Pred,Pred-Labor
+2023_Q1_L_3h,Run of River,376.85758999716313,Q1,Labor,3h,Pred,Pred-Labor
+2023_Q1_L_4h,Run of River,377.0897834179474,Q1,Labor,4h,Pred,Pred-Labor
+2023_Q1_L_5h,Run of River,378.69066621592486,Q1,Labor,5h,Pred,Pred-Labor
+2023_Q1_L_6h,Run of River,381.7671378311604,Q1,Labor,6h,Pred,Pred-Labor
+2023_Q1_L_7h,Run of River,383.9747988592373,Q1,Labor,7h,Pred,Pred-Labor
+2023_Q1_L_8h,Run of River,386.8300625964986,Q1,Labor,8h,Pred,Pred-Labor
+2023_Q1_L_9h,Run of River,390.37937154332667,Q1,Labor,9h,Pred,Pred-Labor
+2023_Q1_L_10h,Run of River,392.2017054718158,Q1,Labor,10h,Pred,Pred-Labor
+2023_Q1_L_11h,Run of River,394.1312162721239,Q1,Labor,11h,Pred,Pred-Labor
+2023_Q1_L_12h,Run of River,394.48487867539507,Q1,Labor,12h,Pred,Pred-Labor
+2023_Q1_L_13h,Run of River,393.3190236345643,Q1,Labor,13h,Pred,Pred-Labor
+2023_Q1_L_14h,Run of River,393.87742326880425,Q1,Labor,14h,Pred,Pred-Labor
+2023_Q1_L_15h,Run of River,395.693810724406,Q1,Labor,15h,Pred,Pred-Labor
+2023_Q1_L_16h,Run of River,403.45417898096855,Q1,Labor,16h,Pred,Pred-Labor
+2023_Q1_L_17h,Run of River,403.69915832616283,Q1,Labor,17h,Pred,Pred-Labor
+2023_Q1_L_18h,Run of River,403.3835343531648,Q1,Labor,18h,Pred,Pred-Labor
+2023_Q1_L_19h,Run of River,406.2750629468587,Q1,Labor,19h,Pred,Pred-Labor
+2023_Q1_L_20h,Run of River,405.1761721047151,Q1,Labor,20h,Pred,Pred-Labor
+2023_Q1_L_21h,Run of River,400.8574075821379,Q1,Labor,21h,Pred,Pred-Labor
+2023_Q1_L_22h,Run of River,396.2738634427778,Q1,Labor,22h,Pred,Pred-Labor
+2023_Q1_L_23h,Run of River,392.0217671755982,Q1,Labor,23h,Pred,Pred-Labor
+2023_Q1_L_0h,Thermal,1234.2024027568307,Q1,Labor,0h,Pred,Pred-Labor
+2023_Q1_L_1h,Thermal,1099.1712182941662,Q1,Labor,1h,Pred,Pred-Labor
+2023_Q1_L_2h,Thermal,1021.5913400895528,Q1,Labor,2h,Pred,Pred-Labor
+2023_Q1_L_3h,Thermal,966.4947369919664,Q1,Labor,3h,Pred,Pred-Labor
+2023_Q1_L_4h,Thermal,940.011937029835,Q1,Labor,4h,Pred,Pred-Labor
+2023_Q1_L_5h,Thermal,972.6748295599573,Q1,Labor,5h,Pred,Pred-Labor
+2023_Q1_L_6h,Thermal,1039.7354699249254,Q1,Labor,6h,Pred,Pred-Labor
+2023_Q1_L_7h,Thermal,1038.667338543494,Q1,Labor,7h,Pred,Pred-Labor
+2023_Q1_L_8h,Thermal,1109.6719169472144,Q1,Labor,8h,Pred,Pred-Labor
+2023_Q1_L_9h,Thermal,1201.8445213660991,Q1,Labor,9h,Pred,Pred-Labor
+2023_Q1_L_10h,Thermal,1253.249768302509,Q1,Labor,10h,Pred,Pred-Labor
+2023_Q1_L_11h,Thermal,1315.7609822171642,Q1,Labor,11h,Pred,Pred-Labor
+2023_Q1_L_12h,Thermal,1387.2519569401802,Q1,Labor,12h,Pred,Pred-Labor
+2023_Q1_L_13h,Thermal,1399.6696322402686,Q1,Labor,13h,Pred,Pred-Labor
+2023_Q1_L_14h,Thermal,1451.9514722102529,Q1,Labor,14h,Pred,Pred-Labor
+2023_Q1_L_15h,Thermal,1538.9450351253515,Q1,Labor,15h,Pred,Pred-Labor
+2023_Q1_L_16h,Thermal,1595.438034065132,Q1,Labor,16h,Pred,Pred-Labor
+2023_Q1_L_17h,Thermal,1598.5812906076728,Q1,Labor,17h,Pred,Pred-Labor
+2023_Q1_L_18h,Thermal,1555.3216188025553,Q1,Labor,18h,Pred,Pred-Labor
+2023_Q1_L_19h,Thermal,1690.136500812777,Q1,Labor,19h,Pred,Pred-Labor
+2023_Q1_L_20h,Thermal,1705.7387424814058,Q1,Labor,20h,Pred,Pred-Labor
+2023_Q1_L_21h,Thermal,1654.9496291796365,Q1,Labor,21h,Pred,Pred-Labor
+2023_Q1_L_22h,Thermal,1534.2576749464117,Q1,Labor,22h,Pred,Pred-Labor
+2023_Q1_L_23h,Thermal,1372.3701237744435,Q1,Labor,23h,Pred,Pred-Labor
 2023_Q1_L_0h,Solar,0.0,Q1,Labor,0h,Pred,Pred-Labor
 2023_Q1_L_1h,Solar,0.0,Q1,Labor,1h,Pred,Pred-Labor
 2023_Q1_L_2h,Solar,0.0,Q1,Labor,2h,Pred,Pred-Labor
 2023_Q1_L_3h,Solar,0.0,Q1,Labor,3h,Pred,Pred-Labor
 2023_Q1_L_4h,Solar,0.0,Q1,Labor,4h,Pred,Pred-Labor
-2023_Q1_L_5h,Solar,110.30095201894589,Q1,Labor,5h,Pred,Pred-Labor
-2023_Q1_L_6h,Solar,140.01206141255318,Q1,Labor,6h,Pred,Pred-Labor
-2023_Q1_L_7h,Solar,224.42878842749107,Q1,Labor,7h,Pred,Pred-Labor
-2023_Q1_L_8h,Solar,335.74149564134586,Q1,Labor,8h,Pred,Pred-Labor
-2023_Q1_L_9h,Solar,440.59559915916367,Q1,Labor,9h,Pred,Pred-Labor
-2023_Q1_L_10h,Solar,520.7820398082772,Q1,Labor,10h,Pred,Pred-Labor
-2023_Q1_L_11h,Solar,562.0189266045102,Q1,Labor,11h,Pred,Pred-Labor
-2023_Q1_L_12h,Solar,560.8907171854878,Q1,Labor,12h,Pred,Pred-Labor
-2023_Q1_L_13h,Solar,513.9334488082684,Q1,Labor,13h,Pred,Pred-Labor
-2023_Q1_L_14h,Solar,429.7426912466562,Q1,Labor,14h,Pred,Pred-Labor
-2023_Q1_L_15h,Solar,325.4220648412632,Q1,Labor,15h,Pred,Pred-Labor
-2023_Q1_L_16h,Solar,218.4124769459916,Q1,Labor,16h,Pred,Pred-Labor
-2023_Q1_L_17h,Solar,132.6593321736508,Q1,Labor,17h,Pred,Pred-Labor
-2023_Q1_L_18h,Solar,66.55243351491828,Q1,Labor,18h,Pred,Pred-Labor
+2023_Q1_L_5h,Solar,0.06080784489443804,Q1,Labor,5h,Pred,Pred-Labor
+2023_Q1_L_6h,Solar,45.58382633802931,Q1,Labor,6h,Pred,Pred-Labor
+2023_Q1_L_7h,Solar,168.58402964800496,Q1,Labor,7h,Pred,Pred-Labor
+2023_Q1_L_8h,Solar,322.01740278561033,Q1,Labor,8h,Pred,Pred-Labor
+2023_Q1_L_9h,Solar,459.8454951600468,Q1,Labor,9h,Pred,Pred-Labor
+2023_Q1_L_10h,Solar,562.0259598257543,Q1,Labor,10h,Pred,Pred-Labor
+2023_Q1_L_11h,Solar,612.8854816251027,Q1,Labor,11h,Pred,Pred-Labor
+2023_Q1_L_12h,Solar,610.0797357330538,Q1,Labor,12h,Pred,Pred-Labor
+2023_Q1_L_13h,Solar,551.1043437464875,Q1,Labor,13h,Pred,Pred-Labor
+2023_Q1_L_14h,Solar,442.87060905493155,Q1,Labor,14h,Pred,Pred-Labor
+2023_Q1_L_15h,Solar,304.4231318530267,Q1,Labor,15h,Pred,Pred-Labor
+2023_Q1_L_16h,Solar,157.11637361708407,Q1,Labor,16h,Pred,Pred-Labor
+2023_Q1_L_17h,Solar,33.05872311114498,Q1,Labor,17h,Pred,Pred-Labor
+2023_Q1_L_18h,Solar,0.03198387917779516,Q1,Labor,18h,Pred,Pred-Labor
 2023_Q1_L_19h,Solar,0.0,Q1,Labor,19h,Pred,Pred-Labor
 2023_Q1_L_20h,Solar,0.0,Q1,Labor,20h,Pred,Pred-Labor
 2023_Q1_L_21h,Solar,0.0,Q1,Labor,21h,Pred,Pred-Labor
 2023_Q1_L_22h,Solar,0.0,Q1,Labor,22h,Pred,Pred-Labor
 2023_Q1_L_23h,Solar,0.0,Q1,Labor,23h,Pred,Pred-Labor
-2023_Q1_L_0h,Wind,39.97076440099621,Q1,Labor,0h,Pred,Pred-Labor
-2023_Q1_L_1h,Wind,39.74652946183474,Q1,Labor,1h,Pred,Pred-Labor
-2023_Q1_L_2h,Wind,39.54140141283659,Q1,Labor,2h,Pred,Pred-Labor
-2023_Q1_L_3h,Wind,39.44472345339107,Q1,Labor,3h,Pred,Pred-Labor
-2023_Q1_L_4h,Wind,39.33529074482993,Q1,Labor,4h,Pred,Pred-Labor
-2023_Q1_L_5h,Wind,39.32459673087171,Q1,Labor,5h,Pred,Pred-Labor
-2023_Q1_L_6h,Wind,39.288840877187624,Q1,Labor,6h,Pred,Pred-Labor
-2023_Q1_L_7h,Wind,39.15483225841596,Q1,Labor,7h,Pred,Pred-Labor
-2023_Q1_L_8h,Wind,39.16228562372978,Q1,Labor,8h,Pred,Pred-Labor
-2023_Q1_L_9h,Wind,39.14773794833853,Q1,Labor,9h,Pred,Pred-Labor
-2023_Q1_L_10h,Wind,39.2258362964156,Q1,Labor,10h,Pred,Pred-Labor
-2023_Q1_L_11h,Wind,39.16064241817979,Q1,Labor,11h,Pred,Pred-Labor
-2023_Q1_L_12h,Wind,39.21101350921426,Q1,Labor,12h,Pred,Pred-Labor
-2023_Q1_L_13h,Wind,39.26588065874872,Q1,Labor,13h,Pred,Pred-Labor
-2023_Q1_L_14h,Wind,39.48683558119667,Q1,Labor,14h,Pred,Pred-Labor
-2023_Q1_L_15h,Wind,39.803515176237156,Q1,Labor,15h,Pred,Pred-Labor
-2023_Q1_L_16h,Wind,40.27098059993406,Q1,Labor,16h,Pred,Pred-Labor
-2023_Q1_L_17h,Wind,41.06676439145094,Q1,Labor,17h,Pred,Pred-Labor
-2023_Q1_L_18h,Wind,41.540526318026835,Q1,Labor,18h,Pred,Pred-Labor
-2023_Q1_L_19h,Wind,41.73900061149115,Q1,Labor,19h,Pred,Pred-Labor
-2023_Q1_L_20h,Wind,41.69550177344015,Q1,Labor,20h,Pred,Pred-Labor
-2023_Q1_L_21h,Wind,41.37638995324302,Q1,Labor,21h,Pred,Pred-Labor
-2023_Q1_L_22h,Wind,40.97647351622219,Q1,Labor,22h,Pred,Pred-Labor
-2023_Q1_L_23h,Wind,40.43112358862864,Q1,Labor,23h,Pred,Pred-Labor
+2023_Q1_L_0h,Wind,26.734497030271918,Q1,Labor,0h,Pred,Pred-Labor
+2023_Q1_L_1h,Wind,26.528069976076164,Q1,Labor,1h,Pred,Pred-Labor
+2023_Q1_L_2h,Wind,26.31629140838054,Q1,Labor,2h,Pred,Pred-Labor
+2023_Q1_L_3h,Wind,26.242779702194955,Q1,Labor,3h,Pred,Pred-Labor
+2023_Q1_L_4h,Wind,26.11574129998413,Q1,Labor,4h,Pred,Pred-Labor
+2023_Q1_L_5h,Wind,26.068894210560593,Q1,Labor,5h,Pred,Pred-Labor
+2023_Q1_L_6h,Wind,25.9200767670384,Q1,Labor,6h,Pred,Pred-Labor
+2023_Q1_L_7h,Wind,25.69414391377292,Q1,Labor,7h,Pred,Pred-Labor
+2023_Q1_L_8h,Wind,25.60068953627778,Q1,Labor,8h,Pred,Pred-Labor
+2023_Q1_L_9h,Wind,25.492689415811903,Q1,Labor,9h,Pred,Pred-Labor
+2023_Q1_L_10h,Wind,25.56760687375207,Q1,Labor,10h,Pred,Pred-Labor
+2023_Q1_L_11h,Wind,25.414492676334476,Q1,Labor,11h,Pred,Pred-Labor
+2023_Q1_L_12h,Wind,25.403130361078624,Q1,Labor,12h,Pred,Pred-Labor
+2023_Q1_L_13h,Wind,25.4726593631607,Q1,Labor,13h,Pred,Pred-Labor
+2023_Q1_L_14h,Wind,25.735537865286336,Q1,Labor,14h,Pred,Pred-Labor
+2023_Q1_L_15h,Wind,26.083120456092367,Q1,Labor,15h,Pred,Pred-Labor
+2023_Q1_L_16h,Wind,26.691334540523833,Q1,Labor,16h,Pred,Pred-Labor
+2023_Q1_L_17h,Wind,27.851461725240913,Q1,Labor,17h,Pred,Pred-Labor
+2023_Q1_L_18h,Wind,28.595679107817638,Q1,Labor,18h,Pred,Pred-Labor
+2023_Q1_L_19h,Wind,28.638131085714065,Q1,Labor,19h,Pred,Pred-Labor
+2023_Q1_L_20h,Wind,28.518859602475402,Q1,Labor,20h,Pred,Pred-Labor
+2023_Q1_L_21h,Wind,28.189687644144122,Q1,Labor,21h,Pred,Pred-Labor
+2023_Q1_L_22h,Wind,27.806895793224374,Q1,Labor,22h,Pred,Pred-Labor
+2023_Q1_L_23h,Wind,27.235069185110895,Q1,Labor,23h,Pred,Pred-Labor
 2023_Q1_H_0h,Hydro,6178.813283076923,Q1,Holiday,0h,Real,Real-Holiday
 2023_Q1_H_1h,Hydro,6022.102306923077,Q1,Holiday,1h,Real,Real-Holiday
 2023_Q1_H_2h,Hydro,5782.029816923076,Q1,Holiday,2h,Real,Real-Holiday
@@ -347,123 +347,123 @@ timestamp,Tech,DispatchGen_MW,Quarter,DayType,Hour,Source,Subplot
 2023_Q1_H_21h,Wind,22.771668461538464,Q1,Holiday,21h,Real,Real-Holiday
 2023_Q1_H_22h,Wind,22.784487692307696,Q1,Holiday,22h,Real,Real-Holiday
 2023_Q1_H_23h,Wind,21.93121307692308,Q1,Holiday,23h,Real,Real-Holiday
-2023_Q1_H_0h,Hydro,6171.490406468719,Q1,Holiday,0h,Pred,Pred-Holiday
-2023_Q1_H_1h,Hydro,6081.60323638376,Q1,Holiday,1h,Pred,Pred-Holiday
-2023_Q1_H_2h,Hydro,5933.565558115672,Q1,Holiday,2h,Pred,Pred-Holiday
-2023_Q1_H_3h,Hydro,5791.687704333146,Q1,Holiday,3h,Pred,Pred-Holiday
-2023_Q1_H_4h,Hydro,5700.997608631061,Q1,Holiday,4h,Pred,Pred-Holiday
-2023_Q1_H_5h,Hydro,5646.532762531321,Q1,Holiday,5h,Pred,Pred-Holiday
-2023_Q1_H_6h,Hydro,5561.099539587468,Q1,Holiday,6h,Pred,Pred-Holiday
-2023_Q1_H_7h,Hydro,5439.23941856352,Q1,Holiday,7h,Pred,Pred-Holiday
-2023_Q1_H_8h,Hydro,5473.197990604756,Q1,Holiday,8h,Pred,Pred-Holiday
-2023_Q1_H_9h,Hydro,5634.092542414186,Q1,Holiday,9h,Pred,Pred-Holiday
-2023_Q1_H_10h,Hydro,5798.300047434632,Q1,Holiday,10h,Pred,Pred-Holiday
-2023_Q1_H_11h,Hydro,5940.333901264536,Q1,Holiday,11h,Pred,Pred-Holiday
-2023_Q1_H_12h,Hydro,6118.584202210275,Q1,Holiday,12h,Pred,Pred-Holiday
-2023_Q1_H_13h,Hydro,6202.256289236627,Q1,Holiday,13h,Pred,Pred-Holiday
-2023_Q1_H_14h,Hydro,6244.493059379657,Q1,Holiday,14h,Pred,Pred-Holiday
-2023_Q1_H_15h,Hydro,6250.858140112323,Q1,Holiday,15h,Pred,Pred-Holiday
-2023_Q1_H_16h,Hydro,6282.604192939021,Q1,Holiday,16h,Pred,Pred-Holiday
-2023_Q1_H_17h,Hydro,6271.299372592191,Q1,Holiday,17h,Pred,Pred-Holiday
-2023_Q1_H_18h,Hydro,6339.615128788302,Q1,Holiday,18h,Pred,Pred-Holiday
-2023_Q1_H_19h,Hydro,6765.10007244739,Q1,Holiday,19h,Pred,Pred-Holiday
-2023_Q1_H_20h,Hydro,6897.541645142216,Q1,Holiday,20h,Pred,Pred-Holiday
-2023_Q1_H_21h,Hydro,6849.764967277708,Q1,Holiday,21h,Pred,Pred-Holiday
-2023_Q1_H_22h,Hydro,6665.2565667384215,Q1,Holiday,22h,Pred,Pred-Holiday
-2023_Q1_H_23h,Hydro,6418.788538138616,Q1,Holiday,23h,Pred,Pred-Holiday
-2023_Q1_H_0h,Run of River,429.62476338093813,Q1,Holiday,0h,Pred,Pred-Holiday
-2023_Q1_H_1h,Run of River,409.8887196162304,Q1,Holiday,1h,Pred,Pred-Holiday
-2023_Q1_H_2h,Run of River,404.96404644987376,Q1,Holiday,2h,Pred,Pred-Holiday
-2023_Q1_H_3h,Run of River,423.74971741890784,Q1,Holiday,3h,Pred,Pred-Holiday
-2023_Q1_H_4h,Run of River,422.16166259242084,Q1,Holiday,4h,Pred,Pred-Holiday
-2023_Q1_H_5h,Run of River,420.9132217084633,Q1,Holiday,5h,Pred,Pred-Holiday
-2023_Q1_H_6h,Run of River,452.8811206081129,Q1,Holiday,6h,Pred,Pred-Holiday
-2023_Q1_H_7h,Run of River,412.1279168171379,Q1,Holiday,7h,Pred,Pred-Holiday
-2023_Q1_H_8h,Run of River,441.18189623032026,Q1,Holiday,8h,Pred,Pred-Holiday
-2023_Q1_H_9h,Run of River,449.26877742042166,Q1,Holiday,9h,Pred,Pred-Holiday
-2023_Q1_H_10h,Run of River,452.78208644785695,Q1,Holiday,10h,Pred,Pred-Holiday
-2023_Q1_H_11h,Run of River,463.5461795925397,Q1,Holiday,11h,Pred,Pred-Holiday
-2023_Q1_H_12h,Run of River,436.9597994167057,Q1,Holiday,12h,Pred,Pred-Holiday
-2023_Q1_H_13h,Run of River,445.77217450942703,Q1,Holiday,13h,Pred,Pred-Holiday
-2023_Q1_H_14h,Run of River,442.48109984104053,Q1,Holiday,14h,Pred,Pred-Holiday
-2023_Q1_H_15h,Run of River,445.2781206929375,Q1,Holiday,15h,Pred,Pred-Holiday
-2023_Q1_H_16h,Run of River,431.7735636199533,Q1,Holiday,16h,Pred,Pred-Holiday
-2023_Q1_H_17h,Run of River,452.00773635479845,Q1,Holiday,17h,Pred,Pred-Holiday
-2023_Q1_H_18h,Run of River,427.51980656006145,Q1,Holiday,18h,Pred,Pred-Holiday
-2023_Q1_H_19h,Run of River,447.36412875007295,Q1,Holiday,19h,Pred,Pred-Holiday
-2023_Q1_H_20h,Run of River,466.25660939365315,Q1,Holiday,20h,Pred,Pred-Holiday
-2023_Q1_H_21h,Run of River,439.93655032885897,Q1,Holiday,21h,Pred,Pred-Holiday
-2023_Q1_H_22h,Run of River,451.3717544492544,Q1,Holiday,22h,Pred,Pred-Holiday
-2023_Q1_H_23h,Run of River,453.0596350507203,Q1,Holiday,23h,Pred,Pred-Holiday
-2023_Q1_H_0h,Thermal,3946.9188794279166,Q1,Holiday,0h,Pred,Pred-Holiday
-2023_Q1_H_1h,Thermal,3918.031153966999,Q1,Holiday,1h,Pred,Pred-Holiday
-2023_Q1_H_2h,Thermal,3876.5479746684223,Q1,Holiday,2h,Pred,Pred-Holiday
-2023_Q1_H_3h,Thermal,3842.018135308125,Q1,Holiday,3h,Pred,Pred-Holiday
-2023_Q1_H_4h,Thermal,3815.810903909197,Q1,Holiday,4h,Pred,Pred-Holiday
-2023_Q1_H_5h,Thermal,3799.9640573224247,Q1,Holiday,5h,Pred,Pred-Holiday
-2023_Q1_H_6h,Thermal,3783.264153587249,Q1,Holiday,6h,Pred,Pred-Holiday
-2023_Q1_H_7h,Thermal,3733.806546173506,Q1,Holiday,7h,Pred,Pred-Holiday
-2023_Q1_H_8h,Thermal,3750.8006020383978,Q1,Holiday,8h,Pred,Pred-Holiday
-2023_Q1_H_9h,Thermal,3797.4541835032487,Q1,Holiday,9h,Pred,Pred-Holiday
-2023_Q1_H_10h,Thermal,3842.8648640866777,Q1,Holiday,10h,Pred,Pred-Holiday
-2023_Q1_H_11h,Thermal,3882.658580575965,Q1,Holiday,11h,Pred,Pred-Holiday
-2023_Q1_H_12h,Thermal,3922.207289358788,Q1,Holiday,12h,Pred,Pred-Holiday
-2023_Q1_H_13h,Thermal,3947.492904428435,Q1,Holiday,13h,Pred,Pred-Holiday
-2023_Q1_H_14h,Thermal,3960.256091765323,Q1,Holiday,14h,Pred,Pred-Holiday
-2023_Q1_H_15h,Thermal,3965.883151115032,Q1,Holiday,15h,Pred,Pred-Holiday
-2023_Q1_H_16h,Thermal,3972.7470939808354,Q1,Holiday,16h,Pred,Pred-Holiday
-2023_Q1_H_17h,Thermal,3976.62041498855,Q1,Holiday,17h,Pred,Pred-Holiday
-2023_Q1_H_18h,Thermal,3987.7555879652396,Q1,Holiday,18h,Pred,Pred-Holiday
-2023_Q1_H_19h,Thermal,4100.454247556143,Q1,Holiday,19h,Pred,Pred-Holiday
-2023_Q1_H_20h,Thermal,4139.141850447285,Q1,Holiday,20h,Pred,Pred-Holiday
-2023_Q1_H_21h,Thermal,4121.39746608317,Q1,Holiday,21h,Pred,Pred-Holiday
-2023_Q1_H_22h,Thermal,4078.181869306486,Q1,Holiday,22h,Pred,Pred-Holiday
-2023_Q1_H_23h,Thermal,4015.6814998903674,Q1,Holiday,23h,Pred,Pred-Holiday
+2023_Q1_H_0h,Hydro,6715.636238775903,Q1,Holiday,0h,Pred,Pred-Holiday
+2023_Q1_H_1h,Hydro,6587.512462856859,Q1,Holiday,1h,Pred,Pred-Holiday
+2023_Q1_H_2h,Hydro,6405.255204329768,Q1,Holiday,2h,Pred,Pred-Holiday
+2023_Q1_H_3h,Hydro,6254.608903261168,Q1,Holiday,3h,Pred,Pred-Holiday
+2023_Q1_H_4h,Hydro,6139.908779993309,Q1,Holiday,4h,Pred,Pred-Holiday
+2023_Q1_H_5h,Hydro,6077.4629845051295,Q1,Holiday,5h,Pred,Pred-Holiday
+2023_Q1_H_6h,Hydro,6004.488128813367,Q1,Holiday,6h,Pred,Pred-Holiday
+2023_Q1_H_7h,Hydro,5781.830833954511,Q1,Holiday,7h,Pred,Pred-Holiday
+2023_Q1_H_8h,Hydro,5851.92818916691,Q1,Holiday,8h,Pred,Pred-Holiday
+2023_Q1_H_9h,Hydro,6056.746085114745,Q1,Holiday,9h,Pred,Pred-Holiday
+2023_Q1_H_10h,Hydro,6258.762425472295,Q1,Holiday,10h,Pred,Pred-Holiday
+2023_Q1_H_11h,Hydro,6437.917210411839,Q1,Holiday,11h,Pred,Pred-Holiday
+2023_Q1_H_12h,Hydro,6617.676866426707,Q1,Holiday,12h,Pred,Pred-Holiday
+2023_Q1_H_13h,Hydro,6728.651624488754,Q1,Holiday,13h,Pred,Pred-Holiday
+2023_Q1_H_14h,Hydro,6778.048402443715,Q1,Holiday,14h,Pred,Pred-Holiday
+2023_Q1_H_15h,Hydro,6795.997094845408,Q1,Holiday,15h,Pred,Pred-Holiday
+2023_Q1_H_16h,Hydro,6821.185926886616,Q1,Holiday,16h,Pred,Pred-Holiday
+2023_Q1_H_17h,Hydro,6845.526083108282,Q1,Holiday,17h,Pred,Pred-Holiday
+2023_Q1_H_18h,Hydro,6897.806375851492,Q1,Holiday,18h,Pred,Pred-Holiday
+2023_Q1_H_19h,Hydro,7443.1977992946295,Q1,Holiday,19h,Pred,Pred-Holiday
+2023_Q1_H_20h,Hydro,7666.156163674951,Q1,Holiday,20h,Pred,Pred-Holiday
+2023_Q1_H_21h,Hydro,7561.590561292527,Q1,Holiday,21h,Pred,Pred-Holiday
+2023_Q1_H_22h,Hydro,7313.725087486961,Q1,Holiday,22h,Pred,Pred-Holiday
+2023_Q1_H_23h,Hydro,7019.3337917058425,Q1,Holiday,23h,Pred,Pred-Holiday
+2023_Q1_H_0h,Run of River,383.43169725715455,Q1,Holiday,0h,Pred,Pred-Holiday
+2023_Q1_H_1h,Run of River,381.6023162930233,Q1,Holiday,1h,Pred,Pred-Holiday
+2023_Q1_H_2h,Run of River,379.70170220368493,Q1,Holiday,2h,Pred,Pred-Holiday
+2023_Q1_H_3h,Run of River,378.67262006936824,Q1,Holiday,3h,Pred,Pred-Holiday
+2023_Q1_H_4h,Run of River,378.425829085119,Q1,Holiday,4h,Pred,Pred-Holiday
+2023_Q1_H_5h,Run of River,378.93037388275,Q1,Holiday,5h,Pred,Pred-Holiday
+2023_Q1_H_6h,Run of River,378.81899971742894,Q1,Holiday,6h,Pred,Pred-Holiday
+2023_Q1_H_7h,Run of River,377.84884348571643,Q1,Holiday,7h,Pred,Pred-Holiday
+2023_Q1_H_8h,Run of River,380.50214793112036,Q1,Holiday,8h,Pred,Pred-Holiday
+2023_Q1_H_9h,Run of River,383.63992813767743,Q1,Holiday,9h,Pred,Pred-Holiday
+2023_Q1_H_10h,Run of River,385.81919683691825,Q1,Holiday,10h,Pred,Pred-Holiday
+2023_Q1_H_11h,Run of River,387.7077953535821,Q1,Holiday,11h,Pred,Pred-Holiday
+2023_Q1_H_12h,Run of River,388.1143037723326,Q1,Holiday,12h,Pred,Pred-Holiday
+2023_Q1_H_13h,Run of River,387.99448890921917,Q1,Holiday,13h,Pred,Pred-Holiday
+2023_Q1_H_14h,Run of River,388.61326736546084,Q1,Holiday,14h,Pred,Pred-Holiday
+2023_Q1_H_15h,Run of River,388.8111495878023,Q1,Holiday,15h,Pred,Pred-Holiday
+2023_Q1_H_16h,Run of River,394.55574150697174,Q1,Holiday,16h,Pred,Pred-Holiday
+2023_Q1_H_17h,Run of River,394.75875705318896,Q1,Holiday,17h,Pred,Pred-Holiday
+2023_Q1_H_18h,Run of River,396.3167500645927,Q1,Holiday,18h,Pred,Pred-Holiday
+2023_Q1_H_19h,Run of River,399.7920986043786,Q1,Holiday,19h,Pred,Pred-Holiday
+2023_Q1_H_20h,Run of River,400.22462505452813,Q1,Holiday,20h,Pred,Pred-Holiday
+2023_Q1_H_21h,Run of River,397.7545323173014,Q1,Holiday,21h,Pred,Pred-Holiday
+2023_Q1_H_22h,Run of River,395.24589336815444,Q1,Holiday,22h,Pred,Pred-Holiday
+2023_Q1_H_23h,Run of River,391.74495604161905,Q1,Holiday,23h,Pred,Pred-Holiday
+2023_Q1_H_0h,Thermal,950.6017548540942,Q1,Holiday,0h,Pred,Pred-Holiday
+2023_Q1_H_1h,Thermal,899.3161748488942,Q1,Holiday,1h,Pred,Pred-Holiday
+2023_Q1_H_2h,Thermal,825.6883332613086,Q1,Holiday,2h,Pred,Pred-Holiday
+2023_Q1_H_3h,Thermal,765.501440501311,Q1,Holiday,3h,Pred,Pred-Holiday
+2023_Q1_H_4h,Thermal,719.7635725350545,Q1,Holiday,4h,Pred,Pred-Holiday
+2023_Q1_H_5h,Thermal,695.2263829644937,Q1,Holiday,5h,Pred,Pred-Holiday
+2023_Q1_H_6h,Thermal,654.2281716713982,Q1,Holiday,6h,Pred,Pred-Holiday
+2023_Q1_H_7h,Thermal,539.917357619002,Q1,Holiday,7h,Pred,Pred-Holiday
+2023_Q1_H_8h,Thermal,536.0545921050303,Q1,Holiday,8h,Pred,Pred-Holiday
+2023_Q1_H_9h,Thermal,591.857928658608,Q1,Holiday,9h,Pred,Pred-Holiday
+2023_Q1_H_10h,Thermal,654.8212500558974,Q1,Holiday,10h,Pred,Pred-Holiday
+2023_Q1_H_11h,Thermal,720.8056581174742,Q1,Holiday,11h,Pred,Pred-Holiday
+2023_Q1_H_12h,Thermal,794.7556547234652,Q1,Holiday,12h,Pred,Pred-Holiday
+2023_Q1_H_13h,Thermal,851.0635823805509,Q1,Holiday,13h,Pred,Pred-Holiday
+2023_Q1_H_14h,Thermal,892.6532751223793,Q1,Holiday,14h,Pred,Pred-Holiday
+2023_Q1_H_15h,Thermal,927.9074552602483,Q1,Holiday,15h,Pred,Pred-Holiday
+2023_Q1_H_16h,Thermal,970.1435503591632,Q1,Holiday,16h,Pred,Pred-Holiday
+2023_Q1_H_17h,Thermal,1003.0635941492922,Q1,Holiday,17h,Pred,Pred-Holiday
+2023_Q1_H_18h,Thermal,1026.4910778735605,Q1,Holiday,18h,Pred,Pred-Holiday
+2023_Q1_H_19h,Thermal,1178.2133305965376,Q1,Holiday,19h,Pred,Pred-Holiday
+2023_Q1_H_20h,Thermal,1191.611915432451,Q1,Holiday,20h,Pred,Pred-Holiday
+2023_Q1_H_21h,Thermal,1185.6609874107642,Q1,Holiday,21h,Pred,Pred-Holiday
+2023_Q1_H_22h,Thermal,1166.4959559824551,Q1,Holiday,22h,Pred,Pred-Holiday
+2023_Q1_H_23h,Thermal,1075.2248263675197,Q1,Holiday,23h,Pred,Pred-Holiday
 2023_Q1_H_0h,Solar,0.0,Q1,Holiday,0h,Pred,Pred-Holiday
 2023_Q1_H_1h,Solar,0.0,Q1,Holiday,1h,Pred,Pred-Holiday
 2023_Q1_H_2h,Solar,0.0,Q1,Holiday,2h,Pred,Pred-Holiday
 2023_Q1_H_3h,Solar,0.0,Q1,Holiday,3h,Pred,Pred-Holiday
 2023_Q1_H_4h,Solar,0.0,Q1,Holiday,4h,Pred,Pred-Holiday
-2023_Q1_H_5h,Solar,96.00982735895607,Q1,Holiday,5h,Pred,Pred-Holiday
-2023_Q1_H_6h,Solar,122.29555269680554,Q1,Holiday,6h,Pred,Pred-Holiday
-2023_Q1_H_7h,Solar,196.7094747136422,Q1,Holiday,7h,Pred,Pred-Holiday
-2023_Q1_H_8h,Solar,297.17844633123303,Q1,Holiday,8h,Pred,Pred-Holiday
-2023_Q1_H_9h,Solar,394.2657683654965,Q1,Holiday,9h,Pred,Pred-Holiday
-2023_Q1_H_10h,Solar,470.3190547033426,Q1,Holiday,10h,Pred,Pred-Holiday
-2023_Q1_H_11h,Solar,510.2601199659833,Q1,Holiday,11h,Pred,Pred-Holiday
-2023_Q1_H_12h,Solar,510.39793689254657,Q1,Holiday,12h,Pred,Pred-Holiday
-2023_Q1_H_13h,Solar,467.6328670373139,Q1,Holiday,13h,Pred,Pred-Holiday
-2023_Q1_H_14h,Solar,388.633537446676,Q1,Holiday,14h,Pred,Pred-Holiday
-2023_Q1_H_15h,Solar,290.78924517531846,Q1,Holiday,15h,Pred,Pred-Holiday
-2023_Q1_H_16h,Solar,192.4500515807675,Q1,Holiday,16h,Pred,Pred-Holiday
-2023_Q1_H_17h,Solar,115.79793942830652,Q1,Holiday,17h,Pred,Pred-Holiday
-2023_Q1_H_18h,Solar,57.89105480660197,Q1,Holiday,18h,Pred,Pred-Holiday
+2023_Q1_H_5h,Solar,0.061496876460800015,Q1,Holiday,5h,Pred,Pred-Holiday
+2023_Q1_H_6h,Solar,45.67554460430069,Q1,Holiday,6h,Pred,Pred-Holiday
+2023_Q1_H_7h,Solar,168.08852943333773,Q1,Holiday,7h,Pred,Pred-Holiday
+2023_Q1_H_8h,Solar,320.9859018635115,Q1,Holiday,8h,Pred,Pred-Holiday
+2023_Q1_H_9h,Solar,458.7576493790409,Q1,Holiday,9h,Pred,Pred-Holiday
+2023_Q1_H_10h,Solar,561.0092656570916,Q1,Holiday,10h,Pred,Pred-Holiday
+2023_Q1_H_11h,Solar,611.8969116418507,Q1,Holiday,11h,Pred,Pred-Holiday
+2023_Q1_H_12h,Solar,608.774156423969,Q1,Holiday,12h,Pred,Pred-Holiday
+2023_Q1_H_13h,Solar,549.8028306339005,Q1,Holiday,13h,Pred,Pred-Holiday
+2023_Q1_H_14h,Solar,441.84360476471545,Q1,Holiday,14h,Pred,Pred-Holiday
+2023_Q1_H_15h,Solar,303.81390941262646,Q1,Holiday,15h,Pred,Pred-Holiday
+2023_Q1_H_16h,Solar,156.90576744324045,Q1,Holiday,16h,Pred,Pred-Holiday
+2023_Q1_H_17h,Solar,33.09587969121545,Q1,Holiday,17h,Pred,Pred-Holiday
+2023_Q1_H_18h,Solar,0.032070875752957896,Q1,Holiday,18h,Pred,Pred-Holiday
 2023_Q1_H_19h,Solar,0.0,Q1,Holiday,19h,Pred,Pred-Holiday
 2023_Q1_H_20h,Solar,0.0,Q1,Holiday,20h,Pred,Pred-Holiday
 2023_Q1_H_21h,Solar,0.0,Q1,Holiday,21h,Pred,Pred-Holiday
 2023_Q1_H_22h,Solar,0.0,Q1,Holiday,22h,Pred,Pred-Holiday
 2023_Q1_H_23h,Solar,0.0,Q1,Holiday,23h,Pred,Pred-Holiday
-2023_Q1_H_0h,Wind,35.87157940863159,Q1,Holiday,0h,Pred,Pred-Holiday
-2023_Q1_H_1h,Wind,35.565816330748305,Q1,Holiday,1h,Pred,Pred-Holiday
-2023_Q1_H_2h,Wind,35.57358143385076,Q1,Holiday,2h,Pred,Pred-Holiday
-2023_Q1_H_3h,Wind,35.40573637860845,Q1,Holiday,3h,Pred,Pred-Holiday
-2023_Q1_H_4h,Wind,35.42413107899578,Q1,Holiday,4h,Pred,Pred-Holiday
-2023_Q1_H_5h,Wind,35.318789883249465,Q1,Holiday,5h,Pred,Pred-Holiday
-2023_Q1_H_6h,Wind,35.00741735364097,Q1,Holiday,6h,Pred,Pred-Holiday
-2023_Q1_H_7h,Wind,34.821108420141854,Q1,Holiday,7h,Pred,Pred-Holiday
-2023_Q1_H_8h,Wind,34.64278365353755,Q1,Holiday,8h,Pred,Pred-Holiday
-2023_Q1_H_9h,Wind,34.395860353427224,Q1,Holiday,9h,Pred,Pred-Holiday
-2023_Q1_H_10h,Wind,34.618094970911464,Q1,Holiday,10h,Pred,Pred-Holiday
-2023_Q1_H_11h,Wind,34.58062514983411,Q1,Holiday,11h,Pred,Pred-Holiday
-2023_Q1_H_12h,Wind,34.54920665016902,Q1,Holiday,12h,Pred,Pred-Holiday
-2023_Q1_H_13h,Wind,34.58830317501207,Q1,Holiday,13h,Pred,Pred-Holiday
-2023_Q1_H_14h,Wind,34.83246385774204,Q1,Holiday,14h,Pred,Pred-Holiday
-2023_Q1_H_15h,Wind,35.14385298692888,Q1,Holiday,15h,Pred,Pred-Holiday
-2023_Q1_H_16h,Wind,35.74705636689779,Q1,Holiday,16h,Pred,Pred-Holiday
-2023_Q1_H_17h,Wind,36.49762928154534,Q1,Holiday,17h,Pred,Pred-Holiday
-2023_Q1_H_18h,Wind,36.921889620555426,Q1,Holiday,18h,Pred,Pred-Holiday
-2023_Q1_H_19h,Wind,37.1297277722184,Q1,Holiday,19h,Pred,Pred-Holiday
-2023_Q1_H_20h,Wind,37.14105366373733,Q1,Holiday,20h,Pred,Pred-Holiday
-2023_Q1_H_21h,Wind,36.874367845770536,Q1,Holiday,21h,Pred,Pred-Holiday
-2023_Q1_H_22h,Wind,36.436785329251826,Q1,Holiday,22h,Pred,Pred-Holiday
-2023_Q1_H_23h,Wind,35.94210377619263,Q1,Holiday,23h,Pred,Pred-Holiday
+2023_Q1_H_0h,Wind,27.26036984111275,Q1,Holiday,0h,Pred,Pred-Holiday
+2023_Q1_H_1h,Wind,26.8855366497802,Q1,Holiday,1h,Pred,Pred-Holiday
+2023_Q1_H_2h,Wind,27.062806115285593,Q1,Holiday,2h,Pred,Pred-Holiday
+2023_Q1_H_3h,Wind,26.928477449674993,Q1,Holiday,3h,Pred,Pred-Holiday
+2023_Q1_H_4h,Wind,27.06158836563103,Q1,Holiday,4h,Pred,Pred-Holiday
+2023_Q1_H_5h,Wind,26.95893201404899,Q1,Holiday,5h,Pred,Pred-Holiday
+2023_Q1_H_6h,Wind,26.52301862921255,Q1,Holiday,6h,Pred,Pred-Holiday
+2023_Q1_H_7h,Wind,26.426518862450067,Q1,Holiday,7h,Pred,Pred-Holiday
+2023_Q1_H_8h,Wind,26.084425637654753,Q1,Holiday,8h,Pred,Pred-Holiday
+2023_Q1_H_9h,Wind,25.5128584110795,Q1,Holiday,9h,Pred,Pred-Holiday
+2023_Q1_H_10h,Wind,25.704768952596773,Q1,Holiday,10h,Pred,Pred-Holiday
+2023_Q1_H_11h,Wind,25.48774467405849,Q1,Holiday,11h,Pred,Pred-Holiday
+2023_Q1_H_12h,Wind,25.278023590633637,Q1,Holiday,12h,Pred,Pred-Holiday
+2023_Q1_H_13h,Wind,25.23695573017098,Q1,Holiday,13h,Pred,Pred-Holiday
+2023_Q1_H_14h,Wind,25.572322598825423,Q1,Holiday,14h,Pred,Pred-Holiday
+2023_Q1_H_15h,Wind,26.041335820921745,Q1,Holiday,15h,Pred,Pred-Holiday
+2023_Q1_H_16h,Wind,26.969459830285217,Q1,Holiday,16h,Pred,Pred-Holiday
+2023_Q1_H_17h,Wind,28.14224840652784,Q1,Holiday,17h,Pred,Pred-Holiday
+2023_Q1_H_18h,Wind,28.766823835137174,Q1,Holiday,18h,Pred,Pred-Holiday
+2023_Q1_H_19h,Wind,28.631740494601527,Q1,Holiday,19h,Pred,Pred-Holiday
+2023_Q1_H_20h,Wind,28.493408394614015,Q1,Holiday,20h,Pred,Pred-Holiday
+2023_Q1_H_21h,Wind,28.14828586928728,Q1,Holiday,21h,Pred,Pred-Holiday
+2023_Q1_H_22h,Wind,27.634495315786303,Q1,Holiday,22h,Pred,Pred-Holiday
+2023_Q1_H_23h,Wind,27.10016816393622,Q1,Holiday,23h,Pred,Pred-Holiday
