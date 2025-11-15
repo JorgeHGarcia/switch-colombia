@@ -281,11 +281,11 @@ Bio_Surocciden,Biomass,Biomass,Surocciden,200,0,.,0.0,0,.,.,100,.
 GEO_Surocciden,Geothermal,Geothermal,Surocciden,200,0,.,0.0,0,.,.,150,.
 E_Caribe_UPME4,Eolica,Wind,Caribe,200,1,.,0.0,0,.,.,4500,.
 Bio_Surocciden_UPME4,Biomass,Biomass,Surocciden,200,0,.,0.0,0,.,.,978,.
-Biogas_Antioquia_UPME4,Biogas,Biogas,Antioquia,200,0,.,0.0,0,.,.,171,.
-Biogas_Caribe_UPME4,Biogas,Biogas,Caribe,200,0,.,0.0,0,.,.,377,.
-Biogas_Nordeste_UPME4,Biogas,Biogas,Nordeste,200,0,.,0.0,0,.,.,151,.
-Biogas_Oriental_UPME4,Biogas,Biogas,Oriental,200,0,.,0.0,0,.,.,338,.
-Biogas_Surocciden_UPME4,Biogas,Biogas,Surocciden,200,0,.,0.0,0,.,.,285,.
+Biogas_Antioquia_UPME4,Biogas,BIOGAS,Antioquia,200,0,7.5166,0.0,0,.,.,171,.
+Biogas_Caribe_UPME4,Biogas,BIOGAS,Caribe,200,0,7.5166,0.0,0,.,.,377,.
+Biogas_Nordeste_UPME4,Biogas,BIOGAS,Nordeste,200,0,7.5166,0.0,0,.,.,151,.
+Biogas_Oriental_UPME4,Biogas,BIOGAS,Oriental,200,0,7.5166,0.0,0,.,.,338,.
+Biogas_Surocciden_UPME4,Biogas,BIOGAS,Surocciden,200,0,7.5166,0.0,0,.,.,285,.
 PV_Antioquia_UPME4,pv_solar,Solar,Antioquia,200,1,.,0.0,0,.,.,94,.
 PV_Caribe_UPME4,pv_solar,Solar,Caribe,200,1,.,0.0,0,.,.,207,.
 PV_Nordeste_UPME4,pv_solar,Solar,Nordeste,200,1,.,0.0,0,.,.,83,.

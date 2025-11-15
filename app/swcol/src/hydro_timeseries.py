@@ -168,7 +168,5 @@ def generate(model_path, generation, period, cycles, base_year):
 
     # Save the generated timeseries to a CSV file
     hydro_timeseries.reset_index(drop=True, inplace=True)
-    hydro_timeseries.to_csv(model_path + 'hydro_timeseries.csv', index=False)
-    print('Hydro Timeseries saved in ../../model/inputs/hydro_timeseries.csv')
 
     return hydro_timeseries
