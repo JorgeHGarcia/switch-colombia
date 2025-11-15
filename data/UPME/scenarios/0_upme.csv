@@ -1,12 +1,28 @@
-year,BuildGen,gen_tech
-2023,12839,Hydro
-2023,5764,Thermal
-2023,1341,Minors
-2023,454,Solar
-2023,0,Wind
-2024,42,Thermal
-2024,1088,Solar
-2026,99,Solar
-2027,255,Wind
-2028,450,Wind
-2029,492,Wind
+year,Type,gen_tech,BuildGen,BuildGenAcc
+2023,Carbon,Thermal,1626,1626
+2023,Gas,Thermal,3016,3016
+2023,Hidraulica,Hydro,12839,12839
+2023,Liquidos,Thermal,1122,1122
+2023,Otras menores,Minors,369,369
+2023,PCH,PCH,972,972
+2023,Solar GE,pv_solar,454,454
+2024,Eolico,Eolica,255,255
+2024,Gas,Thermal,42,3058
+2024,Solar GE,pv_solar,1088,1542
+2024,Solar distribuida,pv_solar,92,92
+2025,Solar distribuida,pv_solar,110,202
+2026,Solar GE,pv_solar,99,1641
+2026,Solar distribuida,pv_solar,119,321
+2027,Eolico,Eolica,450,705
+2027,Solar distribuida,pv_solar,128,449
+2028,Eolico,Eolica,492,1197
+2028,Solar distribuida,pv_solar,128,577
+2029,Solar distribuida,pv_solar,123,700
+2030,Solar distribuida,pv_solar,109,809
+2031,Solar distribuida,pv_solar,109,918
+2032,Solar distribuida,pv_solar,91,1009
+2033,Solar distribuida,pv_solar,79,1088
+2034,Solar distribuida,pv_solar,80,1168
+2035,Solar distribuida,pv_solar,68,1236
+2036,Solar distribuida,pv_solar,51,1287
+2037,Solar distribuida,pv_solar,69,1356

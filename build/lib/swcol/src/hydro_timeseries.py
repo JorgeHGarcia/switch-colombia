@@ -84,64 +84,37 @@ def to_swcol_names(model_path, generation, base_year):
     return generation
 
 import swcol as sc
-import pandas as pd
-
-def cluster(generation, base_year, stat):
+def cluster(generation, base_year, percentile):
     """
-    Cluster hydro generation data by timestamp and calculate quarterly flow statistics.
+    Cluster hydro generation data by timestamp and calculate statistics.
 
     Args:
         generation (pd.DataFrame): Mapped hydro generation data.
         base_year (int): Base year for clustering.
-        stat (float, str, or list): Either a single "mean" or quantile float, or a list of 4 such values for Q1–Q4.
+        percentile (float): Percentile for calculating flow statistics.
 
     Returns:
         pd.DataFrame: Clustered hydro generation data with flow statistics.
     """
-    import pandas as pd
-
     generation = generation.copy()
 
-    # Determine stat per quarter
-    if isinstance(stat, (list, tuple)):
-        if len(stat) != 4:
-            raise ValueError("If stat is a list/tuple, it must have four elements (one per quarter).")
-        stats = dict(zip(["Q1", "Q2", "Q3", "Q4"], stat))
-    else:
-        stats = {q: stat for q in ["Q1", "Q2", "Q3", "Q4"]}
+    # Create timestamp based on quarters and days of the week
+    generation['timestamp'] = generation['Datetime'].apply(
+        lambda x: f"{base_year}_{sc.rain_seasons.quarter(x.strftime('%B'))}_{sc.rain_seasons.day(x.day_name())}"
+    )
+    generation = generation[['Name', 'Value', 'timestamp']]
 
-    # Create timestamp and quarter labels
-    generation['quarter'] = generation['Datetime'].dt.month.map(lambda m: f"Q{((m - 1) // 3) + 1}")
-    generation['day_type'] = generation['Datetime'].dt.day_name().map(lambda d: sc.rain_seasons.day(d))
-    generation['timestamp'] = generation.apply(lambda x: f"{base_year}_{x['quarter']}_{x['day_type']}", axis=1)
-    generation = generation[['Name', 'Value', 'timestamp', 'quarter']]
+    # Group and calculate statistics
+    fname = f"f{percentile}"
+    generation['min'] = generation['Value']
+    generation[fname] = generation['Value']
 
-    results = []
+    generation = generation.groupby(['Name', 'timestamp']).agg({
+        fname: lambda x: x.quantile(percentile),
+        'min': 'min'
+    }).reset_index()
 
-    for q in ["Q1", "Q2", "Q3", "Q4"]:
-        q_data = generation[generation['quarter'] == q].copy()
-        q_stat = stats[q]
-
-        if q_stat == "mean":
-            stat_func = 'mean'
-        elif isinstance(q_stat, float) and 0 <= q_stat <= 1:
-            stat_func = lambda x: x.quantile(q_stat)
-        else:
-            raise ValueError("Each stat must be either 'mean' or a float between 0 and 1")
-
-        q_data['hydro_avg_flow_mw'] = q_data['Value']
-        q_data['hydro_min_flow_mw'] = q_data['Value']
-
-        q_data = q_data.groupby(['Name', 'timestamp']).agg({
-            'hydro_avg_flow_mw': stat_func,
-            'hydro_min_flow_mw': 'min'
-        }).reset_index()
-
-        results.append(q_data)
-
-    generation = pd.concat(results, axis=0)
-
-    # Create full set of expected combinations
+    # Create missing combinations and fill with zeros
     timestamp = pd.DataFrame({'timestamp': [
         f"{base_year}_Q1_labor", f"{base_year}_Q1_holidays",
         f"{base_year}_Q2_labor", f"{base_year}_Q2_holidays",
@@ -155,24 +128,19 @@ def cluster(generation, base_year, stat):
     missing_generation = combination[~combination.set_index(['Name', 'timestamp']).index.isin(
         generation.set_index(['Name', 'timestamp']).index
     )].copy()
-    missing_generation['hydro_min_flow_mw'] = 0
-    missing_generation['hydro_avg_flow_mw'] = 0
+    missing_generation['min'] = 0
+    missing_generation[fname] = 0
 
-    # Combine all and rename
+    # Combine and rename columns
+    generation = pd.concat([generation, missing_generation], axis=0).reset_index(drop=True)
     generation.rename(columns={
         'Name': 'hydro_project',
-        'timestamp': 'timeseries'
+        'timestamp': 'timeseries',
+        'min': 'hydro_min_flow_mw',
+        fname: 'hydro_avg_flow_mw'
     }, inplace=True)
-    missing_generation.rename(columns={
-        'Name': 'hydro_project',
-        'timestamp': 'timeseries'
-    }, inplace=True)
-
-    generation = pd.concat([generation, missing_generation], axis=0).reset_index(drop=True)
 
     return generation
-
-
 
 def generate(model_path, generation, period, cycles, base_year):
     """

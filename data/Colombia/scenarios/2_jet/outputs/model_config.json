@@ -1,5 +1,6 @@
 {
     "options": {
+        "retire_time": "late",
         "skip_generic_output": false,
         "save_expressions": [],
         "log_run_to_file": false,
@@ -17,10 +18,10 @@
         "suffixes": [
             "dual"
         ],
-        "solver": "cplex",
+        "solver": "cbc",
         "solver_manager": "serial",
         "solver_io": null,
-        "solver_options_string": "lpmethod=4 solutiontype=2",
+        "solver_options_string": "",
         "keepfiles": null,
         "tee": true,
         "symbolic_solver_labels": null,
@@ -29,8 +30,10 @@
         "input_aliases": [],
         "outputs_dir": "outputs",
         "no_post_solve": false,
+        "no_load_solution": false,
         "reload_prior_solution": false,
         "no_save_solution": true,
+        "save_solution_file": false,
         "interact": false,
         "verbose": true
     },

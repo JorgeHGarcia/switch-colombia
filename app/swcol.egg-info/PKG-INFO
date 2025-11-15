@@ -1,13 +1,13 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: swcol
-Version: 0.0.10
+Version: 0.0.11
 Summary: Switch: Electricity Planning Model applied to Colombia
 Home-page: https://github.com/Greater-Gold/switch-colombia
 Author: Juan José Dorado
 Author-email: juanjosedoradom@gmail.com
 License: MIT
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
@@ -15,7 +15,24 @@ License-File: LICENSE
 Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: matplotlib
+Requires-Dist: plotly>=5.0
+Requires-Dist: nbformat>=4.2
 Requires-Dist: kaleido
+Requires-Dist: geopandas>=0.14
+Requires-Dist: tqdm>=4.66
+Requires-Dist: ipywidgets
+Requires-Dist: ipykernel
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 This repository has the  inputs for the Switch Colombia Model. 
 

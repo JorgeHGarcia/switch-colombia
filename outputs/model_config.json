@@ -1,0 +1,39 @@
+{
+    "options": {
+        "log_run_to_file": false,
+        "logs_dir": "logs",
+        "log_level": "warning",
+        "debug": false,
+        "full_traceback": false,
+        "module_list": null,
+        "include_exclude_modules": [],
+        "inputs_dir": "inputs",
+        "iterate_list": null,
+        "max_iter": null,
+        "scenario_name": "",
+        "sorted_output": false,
+        "suffixes": [],
+        "solver": "glpk",
+        "solver_manager": "serial",
+        "solver_io": null,
+        "solver_options_string": "",
+        "keepfiles": null,
+        "tee": null,
+        "symbolic_solver_labels": null,
+        "tempdir": null,
+        "retrieve_cplex_mip_duals": false,
+        "input_aliases": [],
+        "outputs_dir": "outputs",
+        "no_post_solve": false,
+        "no_load_solution": false,
+        "reload_prior_solution": false,
+        "no_save_solution": false,
+        "save_solution_file": false,
+        "interact": false,
+        "verbose": false
+    },
+    "modules": [
+        "switch_model.solve"
+    ],
+    "iterate_modules": []
+}

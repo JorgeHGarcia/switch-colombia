@@ -78,13 +78,11 @@ def dispatched_generation(dataframe, title, units, x_axis, y_axis, color, folder
 import numpy as np
 import plotly.graph_objects as go
 def annual_emmissions(dataframe, x_axis, y_axis, folder, scenario, img_path='../../images'):
-    parse_tech, colors, tech_order, tech_colors = sw.template.get()  # Template
-    # Extraer datos
+    parse_tech, colors, tech_order, tech_colors = sw.template.get()
     x = dataframe[x_axis].values
     y = dataframe[y_axis].values
-    # Crear figura
-    fig = go.Figure()   
-    # Añadir línea con texto
+
+    fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=x, y=y, mode='lines+text',
         text=[f'{val:.2f}' for val in y],
@@ -92,30 +90,27 @@ def annual_emmissions(dataframe, x_axis, y_axis, folder, scenario, img_path='../
         textfont=dict(size=14, family='Arial'),
         line=dict(color=colors[0])
     ))
-    # Layout
+
     fig.update_layout(
         template='plotly_white', showlegend=False, height=9*50, width=16*50,
         font=dict(size=16, family='Arial'),
         xaxis=dict(
-            title='', 
+            title=dict(text='', font=dict(size=18, family='Arial')),
             tickvals=x.tolist(),
-            titlefont=dict(size=18, family='Arial'),
             tickfont=dict(size=14, family='Arial')
         ),
         yaxis=dict(
-            title='Annual Emissions [MtCO2]', 
+            title=dict(text='Annual Emissions [MtCO2]', font=dict(size=18, family='Arial')),
             range=[0, max(y) * 1.1],
-            titlefont=dict(size=18, family='Arial'),
             tickfont=dict(size=14, family='Arial')
         ),
-        title=dict(
-            text='Annual Emissions Over Time (' + scenario + ')',
-            font=dict(size=20, family='Arial')
-        )
-    )    
-    fig.write_image(img_path+"/scenarios/"+folder+"/Annual Emissions Over Time "+scenario+".png")
+        title=dict(text=f'Annual Emissions Over Time ({scenario})',
+                   font=dict(size=20, family='Arial'))
+    )
+
+    fig.write_image(f"{img_path}/scenarios/{folder}/Annual Emissions Over Time {scenario}.png")
     fig.show()
-    dataframe.to_csv(img_path+"/scenarios/"+folder+"/Annual Emissions Over Time "+scenario+".csv", index=False)
+    dataframe.to_csv(f"{img_path}/scenarios/{folder}/Annual Emissions Over Time {scenario}.csv", index=False)
 
 def annual_emissions_combined(dataframes, x_axis, y_axis, labels, colors, folder, title, img_path='../../images'):
     fig = go.Figure()
@@ -128,39 +123,34 @@ def annual_emissions_combined(dataframes, x_axis, y_axis, labels, colors, folder
 
         x = df[x_axis].values
         y = df[y_axis].values
-        fig.add_trace(go.Scatter(
-            x=x, y=y, mode='lines+text', name=labels[i],
-            line=dict(color=colors[i])))
-    
-        fig.update_layout(
+        fig.add_trace(go.Scatter(x=x, y=y, mode='lines+text', name=labels[i], line=dict(color=colors[i])))
+
+    all_ticks = sorted(set().union(*(df[x_axis] for df in dataframes)))
+    ymax = max(df[y_axis].max() for df in dataframes)
+
+    fig.update_layout(
         template='plotly_white', height=9*50, width=16*50,
         font=dict(size=16, family='Arial'),
         xaxis=dict(
-            title='', 
-            tickvals=sorted(set().union(*(df[x_axis] for df in dataframes))),
-            titlefont=dict(size=18, family='Arial'),
+            title=dict(text='', font=dict(size=18, family='Arial')),
+            tickvals=all_ticks,
             tickfont=dict(size=14, family='Arial')
         ),
         yaxis=dict(
-            title='Emissions [MtCO<sub>2</sub>/Year]', 
-            range=[0, max([df[y_axis].max() for df in dataframes]) * 1.1],
-            titlefont=dict(size=16, family='Arial'),
+            title=dict(text='Emissions [MtCO<sub>2</sub>/Year]', font=dict(size=16, family='Arial')),
+            range=[0, ymax * 1.1],
             tickfont=dict(size=14, family='Arial')
         ),
-        title=dict(
-            text='Annual Emissions Over Time (' + title + ')',
-            font=dict(size=20, family='Arial')
-        ),
-        showlegend=True,        
-        legend=dict(
-            orientation="h",
-            y=-0.1, x=0.5,
-            xanchor='center'
-        )
+        title=dict(text=f'Annual Emissions Over Time ({title})',
+                   font=dict(size=20, family='Arial')),
+        showlegend=True,
+        legend=dict(orientation="h", y=-0.1, x=0.5, xanchor='center')
     )
-    fig.write_image(img_path+"/scenarios/" + folder + "/Annual Emissions Over Time " + title + ".png")
+
+    fig.write_image(f"{img_path}/scenarios/{folder}/Annual Emissions Over Time {title}.png")
     fig.show()
-    combined_df.to_csv(img_path+"/scenarios/" + folder + "/Annual Emissions Over Time " + title + ".csv", index=False)
+    combined_df.to_csv(f"{img_path}/scenarios/{folder}/Annual Emissions Over Time {title}.csv", index=False)
+
 
 def installed_capacity(esc0, escf, year0, yearf, scenario, model, img_path='../../images'):
     parse_tech, colors, tech_order, tech_colors = sw.template.get() # Template

@@ -1,4 +1,10 @@
 numpy
 pandas
 matplotlib
+plotly>=5.0
+nbformat>=4.2
 kaleido
+geopandas>=0.14
+tqdm>=4.66
+ipywidgets
+ipykernel

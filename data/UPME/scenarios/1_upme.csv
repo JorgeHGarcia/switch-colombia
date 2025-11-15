@@ -1,22 +1,42 @@
-year,BuildGen,gen_tech
-2023,12839,Hydro
-2023,5764,Thermal
-2023,1341,Minors
-2023,454,Solar
-2023,0,Wind
-2024,665,Solar
-2025,1975,Solar
-2026,1078,Solar
-2027,795,Wind
-2027,100,Solar
-2028,10,Solar
-2029,140,Solar
-2030,134,Hydro
-2030,80,Wind
-2032,1426,Wind
-2033,1575,Wind
-2035,500,Wind
-2035,20,Solar
-2036,305,Solar
-2037,400,Thermal
-2037,63,Minors
+year,Type,gen_tech,BuildGen,BuildGenAcc
+2023,Carbon,Thermal,1626,1626
+2023,Gas,Thermal,3016,3016
+2023,Hidraulica,Hydro,12839,12839
+2023,Liquidos,Thermal,1122,1122
+2023,Otras menores,Minors,369,369
+2023,PCH,PCH,972,972
+2023,Solar GE,pv_solar,454,454
+2024,Eolico,Eolica,255,255
+2024,Gas,Thermal,42,3058
+2024,Solar GE,pv_solar,665,2207
+2024,Solar distribuida,pv_solar,92,92
+2025,Solar GE,pv_solar,1975,4182
+2025,Solar distribuida,pv_solar,110,202
+2026,Solar GE,pv_solar,1078,5359
+2026,Solar distribuida,pv_solar,119,321
+2026,Hidraulica,Hydro,1200,14039
+2028,Eolico,Eolica,795,1992
+2027,Solar GE,pv_solar,100,5459
+2027,Solar distribuida,pv_solar,128,449
+2028,Eolico,Eolica,492,1992
+2028,Solar GE,pv_solar,10,5469
+2028,Solar distribuida,pv_solar,128,577
+2029,Solar GE,pv_solar,140,5609
+2029,Solar distribuida,pv_solar,123,700
+2030,Eolico,Eolica,80,1992
+2030,Hidraulica,Hydro,134,13107
+2030,Otras menores,Minors,53,422
+2030,Solar distribuida,pv_solar,109,809
+2031,Solar distribuida,pv_solar,109,918
+2032,Eolico,Eolica,1426,3418
+2032,Solar distribuida,pv_solar,91,1009
+2033,Eolico,Eolica,1575,4993
+2033,Solar distribuida,pv_solar,79,1088
+2034,Solar distribuida,pv_solar,80,1168
+2035,Eolico,Eolica,500,1992
+2035,Solar GE,pv_solar,20,6129
+2035,Solar distribuida,pv_solar,68,1236
+2036,Solar GE,pv_solar,305,6434
+2036,Solar distribuida,pv_solar,51,1287
+2037,Gas,Thermal,400,3858
+2037,Solar distribuida,pv_solar,69,1356
